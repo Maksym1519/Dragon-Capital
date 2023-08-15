@@ -11,13 +11,10 @@ import { useState } from 'react';
 
 const Header = () => {
     const [isOpen, setOpen] = useState(false)
-    const openMenu = () => {
-        setOpen(true)
+    const toggleMenu = () => {
+        setOpen(!isOpen)
     }
-    const closeMenu = () => {
-        setOpen(false)
-    }
- 
+   
     return ( 
         <div className={h.header__wrapper}>
          <div className={h.header__container}>
@@ -61,7 +58,7 @@ const Header = () => {
            </div>
            <div className={h.ava__wrapper}>
               <img src={Ava} alt="ava" />
-              <img src={Arrow} alt="arrow" onClick={openMenu}/>
+              <img src={Arrow} alt="arrow" onClick={toggleMenu} className={`${h.arrow} ${isOpen ? h.arrowOpen : ''}`} />
            </div>
          </div>
          </div>

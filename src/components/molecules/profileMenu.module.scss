@@ -16,7 +16,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    align-items: flex-end;
 }
 .profileMenu__exit {
-    color: #DB2A29;
+    color: #DB2A29 !important;
 }
