@@ -9,8 +9,8 @@
     <HashRouter>
   <App />
   </HashRouter>, document.getElementById('root')
- 
-  )
+
+)
 
 // import { createRoot } from 'react-dom/client';
 // const container: any = document.getElementById('root');
