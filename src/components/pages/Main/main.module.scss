@@ -1,0 +1,107 @@
+.main__wrapper {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.main__container {
+  width: 100%;
+  max-width: 1368px;
+  margin: 0 auto;
+  height: auto;
+  padding: 0px 24px 0px 48px;
+}
+.main__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 70px;
+}
+.timeDate {
+  width: 14.32%;
+  max-width: 14.32%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 114px;
+  flex-shrink: 1;
+  margin-right: 115px;
+}
+.timeDate__title {
+  white-space: nowrap;
+  margin-bottom: 4px;
+  padding-left: 7px;
+}
+.timeDate__time {
+  color: #000;
+  font-family: "Trebuchet-700";
+  font-size: 72px;
+  line-height: normal;
+}
+.timeDate__date {
+  color: #000;
+  font-family: "Trebuchet-400";
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 62px;
+}
+.timeDate__quote__text {
+  margin-bottom: 14px;
+  padding-left: 7px;
+  line-height: 20px;
+}
+.timeDate__quote__author {
+  padding-left: 7px;
+}
+//important------------------------------------
+.important {
+    max-width: 271px;
+    height: 373px;
+    min-height: 373px;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 36px 25px 0 26px;
+    background: rgba(255, 0, 0, 0.06);
+    margin-right: 64px;
+}
+.important__title {
+    margin-bottom: 26px;
+}
+.important__text1 {
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+.important__text2 {
+   line-height: 20px;
+}
+//celebtrations---------------------------------------
+.celebrations {
+width: 22.95%;    
+max-width: 314px;
+height: auto;
+display: flex;
+flex-direction: column;
+row-gap: 43px;
+}
+.birthdays {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.birthdays__titleWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+.birthdays__items__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
