@@ -5,6 +5,7 @@ import loadable from "@loadable/component";
 import { BrowserRouter, Routes, Route, Link, Switch } from "react-router-dom";
 const MainLazy = React.lazy(() => import("./components/pages/Main/Main"));
 const BirthdaysLazy = React.lazy(() => import("./components/pages/Birthdays/Birthdays"));
+const DepartmentsLazy = React.lazy(() =>import("./components/pages/Departments/Departments.jsx"));
 
 import "./fonts.scss";
 import "./style.scss";
@@ -23,6 +24,22 @@ const App = () => {
             <React.Suspense>
               <MainLazy />
               <BirthdaysLazy />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/departments"
+          element={
+            <React.Suspense>
+              <DepartmentsLazy />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="/departments"
+          element={
+            <React.Suspense>
+              <DepartmentsLazy />
             </React.Suspense>
           }
         />

@@ -1,0 +1,49 @@
+.departments {
+	margin: 46px 0 0 -0.5px;
+	width: 100%;
+	max-width: 178px;
+	display: flex;
+	flex-direction: column;
+	gap: 12.6px;
+
+	&__row {
+		height: auto;
+		color: #000;
+		font-family: Trebuchet-700;
+		font-size: 14px;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+	}
+
+	&__preview {
+		display: flex;
+		flex-direction: row;
+		gap: 7px;
+	}
+
+	&__dropdown-arrow {
+		&.active {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__dropdown {
+		height: 0;
+		visibility: hidden;
+		&.active {
+			margin: 13px 0 0 17px;
+			height: auto;
+			visibility: visible;
+			display: flex;
+			flex-direction: column;
+			gap: 12.5px;
+		}
+
+		cursor: default;
+	}
+
+	&__link {
+		cursor: pointer;
+	}
+}
