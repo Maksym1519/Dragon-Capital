@@ -5,26 +5,30 @@
 }
 .main__container {
   width: 100%;
-  max-width: 1368px;
-  margin: 0 auto;
+  //max-width: 1368px;
+  //margin: 0 auto;
   height: auto;
   padding: 0px 24px 0px 48px;
 }
 .main__body {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: grid;
+  //grid-template-columns: 210px 271px 314px 352px;
+  grid-template-columns: repeat(4,auto);
+  justify-content: space-between;
   margin-top: 70px;
+  margin-bottom: 217px;
 }
 .timeDate {
-  width: 14.32%;
-  max-width: 14.32%;
+  width: 100%;
+  max-width: 210px;
   height: auto;
   display: flex;
   flex-direction: column;
   padding-top: 114px;
   flex-shrink: 1;
-  margin-right: 115px;
+  margin-right: 100px;
 }
 .timeDate__title {
   white-space: nowrap;
@@ -54,6 +58,7 @@
 }
 //important------------------------------------
 .important {
+    width: 100%;
     max-width: 271px;
     height: 373px;
     min-height: 373px;
@@ -77,12 +82,13 @@
 }
 //celebtrations---------------------------------------
 .celebrations {
-width: 22.95%;    
+width: 100%;    
 max-width: 314px;
 height: auto;
 display: flex;
 flex-direction: column;
 row-gap: 43px;
+margin-right: 56px;
 }
 .birthdays {
     width: 100%;
@@ -97,11 +103,104 @@ row-gap: 43px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 .birthdays__items__wrapper {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
+    row-gap: 11px;
+}
+.birthdays__item {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border: 1px solid #E4E4E4;
+    & img {
+        margin-right: 12px;
+    }
+}
+.birthdays__item_active {
+    background: rgba(212, 131, 11, 0.09);
+}
+.person__info__name {
+    color: #000;
+    font-family: 'Trebuchet-700';
+    font-size: 13px;
+    line-height: auto;
+    white-space: nowrap;
+}
+.person__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+    margin-right: 24px;
+}
+.birthdays__status {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.holidays__items__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+}
+.holidays__item {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+    border: 1px solid #E4E4E4;
+}
+//lastFiles--------------------------------------
+.lastFiles {
+    width: 100%;
+    max-width: 352px;
+    height: auto;
+}
+.lastFiles__items__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+}
+.lastFiles__item {
+    width: 100%;
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+    border: 1px solid #E4E4E4;
+    & img {
+        margin-right: 17px;
+    }
+}
+.nameDocument__wrapper {
+    margin-right: 48px;
+}
+.nameDocument__wrapper * {
+    white-space: nowrap;
+}
+.download {
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+}
+.download__text {
+    color: #626262;
+    font-family: 'Trebuchet-400';
+    font-size: 13px;
+    line-height: auto; 
+    white-space: nowrap;
 }

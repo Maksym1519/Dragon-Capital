@@ -12,6 +12,13 @@ import Text20400 from "../../atoms/Text20400";
 import Text18400 from "../../atoms/Text18400";
 import Text20700 from "../../atoms/Text20700";
 import Text12700 from "../../atoms/Text12700";
+import Text15700 from "../../atoms/Text15700";
+import Text13700 from "../../atoms/Text13700";
+import Event from "../../atoms/Event";
+import Ava from '../../../images/birthday-ava.webp';
+import Cake from '../../../images/cake.svg';
+import Word from '../../../images/word.svg';
+import Download from '../../../images/download.svg'
 
 const Main = () => {
   const [currentTime, setCurrentTime] = useState("");
@@ -95,20 +102,147 @@ const Main = () => {
                 </span>
               </div>
               <div className={m.birthdays__items__wrapper}>
-                 <div className={m.birthdays__item}>
-                    <img src="" alt="ava" />
+                 <div className={m.birthdays__item + " " + m.birthdays__item_active}>
+                    <img src={Ava} alt="ava" />
                     <div className={m.person__info}>
-                      <p className={m.person__info__date}><Text12400 text={''}/></p>
-                      <p className={m.person__info__name}></p>
+                      <p className={m.person__info__date}><Text12400 text={'27.08'} /></p>
+                      <p className={m.person__info__name}>Alexander Shevchenko</p>
                     </div>
+                    <div className={m.birthdays__status}>
+                      <span className={m.text}><Text12700 text="Сегодня" color='#D4830B'/></span>
+                      <img src={Cake} alt="icon" />
+                    </div>
+                 </div>
+                 <div className={m.birthdays__item}>
+                    <img src={Ava} alt="ava" />
+                    <div className={m.person__info}>
+                      <p className={m.person__info__date}><Text12400 text={'27.08'} /></p>
+                      <p className={m.person__info__name}>Alexander Shevchenko</p>
+                    </div>
+                    <div className={m.birthdays__status}>
+                      <span className={m.text}><Text12700 text="Через 3 дн" color='#00512F'/></span>
+                     </div>
+                 </div>
+                 <div className={m.birthdays__item}>
+                    <img src={Ava} alt="ava" />
+                    <div className={m.person__info}>
+                      <p className={m.person__info__date}><Text12400 text={'27.08'} /></p>
+                      <p className={m.person__info__name}>Alexander Shevchenko</p>
+                    </div>
+                    <div className={m.birthdays__status}>
+                      <span className={m.text}><Text12700 text="Через 4 дн" color='#00512F'/></span>
+                      </div>
                  </div>
               </div>
             </div>
-            <div className={m.holidays}></div>
+            <div className={m.holidays}>
+            <div className={m.birthdays__titleWrapper}>
+                <h3 className={m.birthdays__title}>
+                  <Text20700 text={"Праздники"} />
+                </h3>
+                <span className={m.birthdays__button}>
+                  <Text12700
+                    text={"Смотреть все"}
+                    underline={true}
+                    color="rgba(34, 51, 58, 0.65)"
+                  />
+                </span>
+              </div>
+              <div className={m.holidays__items__wrapper}>
+                 <div className={m.holidays__item}>
+                   <div className={m.event}>
+                     <Event text1={<Text12400 text='31.12.2018'/>} text2={<Text15700 text='Christmas Eve'/>}/>
+                    </div>
+                    <p className={m.holidays__item__date}><Text12400 text='Через 34 дн' color='#00512F'/></p>
+                 </div>
+                 <div className={m.holidays__item}>
+                   <div className={m.event}>
+                     <Event text1={<Text12400 text='31.12.2018'/>} text2={<Text15700 text='New Year Eve'/>}/>
+                    </div>
+                    <p className={m.holidays__item__date}><Text12400 text='Через 34 дн' color='#00512F'/></p>
+                 </div>
+              </div>
+            </div>
           </div>
+          <div className={m.lastFiles}>
+            <div className={m.birthdays__titleWrapper}>
+                <h3 className={m.birthdays__title}>
+                  <Text20700 text={"Последние файлы"} />
+                </h3>
+                <span className={m.birthdays__button}>
+                  <Text12700
+                    text={"Смотреть все"}
+                    underline={true}
+                    color="rgba(34, 51, 58, 0.65)"
+                  />
+                </span>
+              </div>
+              <div className={m.lastFiles__items__wrapper}>
+                <div className={m.lastFiles__item}>
+                  <img src={Word} alt="word" />
+                  <div className={m.nameDocument__wrapper}>
+                  <Event text1={<Text12400 text='31.12.2018'/>} text2={<Text13700 text='Contract template.docx'/>}/>
+                  </div>
+                  <div className={m.download}>
+                    <span className={m.download__text}>1.2 Mb</span>
+                    <img src={Download} alt="icon" />
+                  </div>
+                </div>
+                <div className={m.lastFiles__item}>
+                  <img src={Word} alt="word" />
+                  <div className={m.nameDocument__wrapper}>
+                  <Event text1={<Text12400 text='31.12.2018'/>} text2={<Text13700 text='Contract template.docx'/>}/>
+                  </div>
+                  <div className={m.download}>
+                    <span className={m.download__text}>1.2 Mb</span>
+                    <img src={Download} alt="icon" />
+                  </div>
+                </div>
+                <div className={m.lastFiles__item}>
+                  <img src={Word} alt="word" />
+                  <div className={m.nameDocument__wrapper}>
+                  <Event text1={<Text12400 text='31.12.2018'/>} text2={<Text13700 text='Contract template.docx'/>}/>
+                  </div>
+                  <div className={m.download}>
+                    <span className={m.download__text}>1.2 Mb</span>
+                    <img src={Download} alt="icon" />
+                  </div>
+                </div>
+                <div className={m.lastFiles__item}>
+                  <img src={Word} alt="word" />
+                  <div className={m.nameDocument__wrapper}>
+                  <Event text1={<Text12400 text='31.12.2018'/>} text2={<Text13700 text='Contract template.docx'/>}/>
+                  </div>
+                  <div className={m.download}>
+                    <span className={m.download__text}>1.2 Mb</span>
+                    <img src={Download} alt="icon" />
+                  </div>
+                </div>
+                <div className={m.lastFiles__item}>
+                  <img src={Word} alt="word" />
+                  <div className={m.nameDocument__wrapper}>
+                  <Event text1={<Text12400 text='31.12.2018'/>} text2={<Text13700 text='Contract template.docx'/>}/>
+                  </div>
+                  <div className={m.download}>
+                    <span className={m.download__text}>1.2 Mb</span>
+                    <img src={Download} alt="icon" />
+                  </div>
+                </div>
+                <div className={m.lastFiles__item}>
+                  <img src={Word} alt="word" />
+                  <div className={m.nameDocument__wrapper}>
+                  <Event text1={<Text12400 text='31.12.2018'/>} text2={<Text13700 text='Contract template.docx'/>}/>
+                  </div>
+                  <div className={m.download}>
+                    <span className={m.download__text}>1.2 Mb</span>
+                    <img src={Download} alt="icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer text={<Text14400 text='Админ пользователь' color='#A9ADB5'/>}/>
     </div>
   );
 };
