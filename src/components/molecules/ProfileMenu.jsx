@@ -9,7 +9,7 @@ const ProfileMenu = () => {
              <Text14400 text={'Мои заявки'} />
             </div>
             <div className={p.profileMenu__exit}>
-            <Text14400 text={'Выйти из аккаунта'} color={{color:"#DB2A29"}}/>
+            <Text14400 text={'Выйти из аккаунта'} color="#DB2A29"/>
             </div>
         </div>
     )
