@@ -11,7 +11,13 @@ import Text14700 from "../../atoms/Text14700";
 
 import PageTitle from "../../atoms/PageTitle";
 
+import WhiteWithGreyBorderDrop from "../../molecules/Dropdowns/WhiteWithGreyBorderDrop";
+
+
+import plusIcon from "../../../images/plus-icon.svg";
 import dropdownArrow from "../../../images/dropdown-arrow-down.svg";
+import dragonBackground from "../../../images/dragon-background.png";
+import greenPencilIcon from "../../../images/green-pencil-icon.svg";
 
 const Departments = () => {
 	const [dropsActive, setDropsActive] = useState([false, false, false, false, false, false,]);
@@ -22,12 +28,20 @@ const Departments = () => {
 
 	return (
 		<>
+			<Header />
 			<div className="p-wrapper">
-				<Header />
+
 				<div className="p-wrapper__page-container">
+					<img src={dragonBackground} alt="" className="p-wrapper__dragon-background" />
 					<PageTitle text="Департаменты"></PageTitle>
+					<div className="departments__add-button">
+						<img src={plusIcon} alt="" className="departments__plus-icon" />
+						Добавить департамент
+					</div>
+					<WhiteWithGreyBorderDrop background='#FFFFFF' width={338} text1="Dragon" text={["Dragon", "Fetch"]}></WhiteWithGreyBorderDrop>
 					<div className="departments">
 						<div className="departments__row">
+							<img src={greenPencilIcon} alt="" className="departments__green-pencil" />
 							<Text14700 text="Assistants"></Text14700>
 						</div>
 						<div className="departments__row" >
@@ -258,6 +272,8 @@ const Departments = () => {
 					</div>
 				</div>
 				{/* <Footer /> */}
+
+
 			</div>
 		</>
 	);

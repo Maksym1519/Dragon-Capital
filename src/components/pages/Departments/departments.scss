@@ -6,6 +6,30 @@
 	flex-direction: column;
 	gap: 12.6px;
 
+	&__add-button {
+		margin: 60px 0 60px 0;
+		width: 245px;
+		height: 46px;
+		background: var(--1, #277d59);
+		display: flex;
+		flex-direction: row;
+		gap: 13px;
+		padding: 14px 0 0 29px;
+
+		color: var(--unnamed, #fff);
+		font-family: PlumbC-400;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 120%; /* 18px */
+	}
+
+	&__plus-icon {
+		margin: 3px 0 0 0;
+		width: 14px;
+		height: 14px;
+	}
+
 	&__row {
 		height: auto;
 		color: #000;
