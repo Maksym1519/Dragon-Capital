@@ -7,9 +7,9 @@ const Footer = (props) => {
         <div className={f.footer__wrapper}>
            <div className={f.footer__container}>
              <div className={f.footer__nav}>
-               <Text12400 text={'Contact support'} color="rgba(101, 107, 116, 0.70)" underline={true} />
-               <Text12400 text={'IT Help'} color="rgba(101, 107, 116, 0.70)" underline={true} />
-               <Text12400 text={'FAQ'} color="rgba(101, 107, 116, 0.70)" underline={true} />
+               <Text12400 text={'Support'} color={props.textColor} underline={true} />
+               <Text12400 text={'IT Help'} color={props.textColor} underline={true} />
+               <Text12400 text={'Сервисная страница'} color={props.textColor} underline={true} />
              </div>
              <div className={f.adminUser}>
               {props.text}
