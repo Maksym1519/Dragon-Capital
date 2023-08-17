@@ -1,8 +1,7 @@
 .footer__wrapper {
     width: 100%;
     padding: 0px 24px 24px 52px;
-    background: #fff;
-}
+    }
 .footer__container {
     width: 100%;
     height: auto;
@@ -14,4 +13,7 @@
     display: flex;
     align-items: center;
     column-gap: 30px;
+}
+.footer__nav:hover {
+    color: #3D3D3D;
 }
