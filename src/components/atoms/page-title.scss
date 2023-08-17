@@ -1,8 +1,10 @@
 .page-title {
-  color: #22333a;
-  font-family: Trebuchet-700;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+	color: var(--unnamed, #3d3d3d);
+
+	/* design/H1 */
+	font-family: Plumb-700;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%; /* 60px */
 }
