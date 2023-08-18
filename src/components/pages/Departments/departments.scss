@@ -1,19 +1,20 @@
 .departments {
-	margin: 46px 0 0 -0.5px;
+	margin: 30px 0 57px -0.5px;
 	width: 100%;
-	max-width: 178px;
+	// height: 100%;
+	max-width: 260px;
 	display: flex;
 	flex-direction: column;
-	gap: 12.6px;
-
+	z-index: 2;
+	gap: 21.5px;
 	&__add-button {
-		margin: 60px 0 60px 0;
+		margin: 57px 0 60px 0;
 		width: 245px;
 		height: 46px;
 		background: var(--1, #277d59);
 		display: flex;
 		flex-direction: row;
-		gap: 13px;
+		gap: 12px;
 		padding: 14px 0 0 29px;
 
 		color: var(--unnamed, #fff);
@@ -22,12 +23,15 @@
 		font-style: normal;
 		font-weight: 700;
 		line-height: 120%; /* 18px */
+		letter-spacing: 0.20px;
+
+		cursor: pointer;
 	}
 
 	&__plus-icon {
-		margin: 3px 0 0 0;
-		width: 14px;
-		height: 14px;
+		margin: 1px 0 0 -1px;
+		width: 16px;
+		height: 16px;
 	}
 
 	&__row {
@@ -36,17 +40,26 @@
 		font-family: Trebuchet-700;
 		font-size: 14px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		cursor: pointer;
+		&.drop {
+			flex-direction: column;
+		}
 	}
 
 	&__preview {
 		display: flex;
 		flex-direction: row;
-		gap: 7px;
+	}
+
+	&__green-pencil {
+		margin: 1px 20px 0 0;
+		width: 17px;
+		height: 17px;
 	}
 
 	&__dropdown-arrow {
+		margin: 2px 0 0 8px;
 		&.active {
 			transform: rotate(180deg);
 		}
@@ -56,12 +69,15 @@
 		height: 0;
 		visibility: hidden;
 		&.active {
-			margin: 13px 0 0 17px;
+			margin: 25px 0 0 20px;
 			height: auto;
 			visibility: visible;
 			display: flex;
 			flex-direction: column;
-			gap: 12.5px;
+			gap: 15px;
+			&.inner {
+				margin: 16px 0 0 30px;
+			}
 		}
 
 		cursor: default;
@@ -69,5 +85,129 @@
 
 	&__link {
 		cursor: pointer;
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.departments-popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	&.active {
+		visibility: visible;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($color: #000000, $alpha: 0.5);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__box {
+		margin: 454px 0 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		width: 480px;
+		height: auto;
+		background: #fff;
+		border: 1px solid #f4f4f4;
+		filter: drop-shadow(0px 24px 54px rgba(0, 0, 0, 0.18));
+	}
+
+	&__cross {
+		top: 20px;
+		right: 20px;
+		position: absolute;
+		cursor: pointer;
+	}
+
+	&__title {
+		margin: 55px 0 0 0;
+		color: var(--unnamed, #3d3d3d);
+		text-align: center;
+		font-family: Plumb-700;
+		font-size: 28px;
+		line-height: 100%; /* 28px */
+	}
+
+	&__content {
+		margin: 50px 0 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__input {
+		width: 360px;
+		height: 40px;
+		color: var(--unnamed, #3d3d3d);
+		font-family: PlumbC-400;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+		background: #fbfbfb;
+		border: 1px solid #e2e2e2;
+		padding: 0 0 0 15px;
+	}
+
+	&__check {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 10px;
+		cursor: pointer;
+	}
+
+	&__checkbox {
+		margin: 0px 0 0 0;
+		border: 1px solid #e2e2e2;
+		width: 15px;
+		height: 15px;
+		&.active {
+			.departments-popup__check-icon {
+				display: flex;
+			}
+		}
+	}
+
+	&__check-icon {
+		margin: -1px 0 0 -1px;
+		display: none;
+		width: 14px;
+		height: 14px;
+	}
+
+	&__check-text {
+		color: var(--unnamed, #3d3d3d);
+		font-family: PlumbC-400;
+		font-size: 15px;
+		line-height: 120%; /* 18px */
+	}
+
+	&__info-icon {
+		margin: 0 0 0 2px;
+		width: 18px;
+		height: 18px;
+	}
+
+	&__button {
+		margin: 18px 0 60px 0;
+		width: 199px;
+		height: 46px;
+		flex-shrink: 0;
+		background: var(--1, #277d59);
+		color: var(--unnamed, #fff);
+		text-align: center;
+		font-family: Plumb-700;
+		font-size: 15px;
 	}
 }

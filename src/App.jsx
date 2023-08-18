@@ -10,6 +10,9 @@ const BirthdaysLazy = React.lazy(() =>
 const DepartmentsLazy = React.lazy(() =>
   import("./components/pages/Departments/Departments.jsx")
 );
+const CalendarLazy = React.lazy(() =>
+  import("./components/pages/Departments/Calendar.jsx")
+);
 
 import "./fonts.scss";
 import "./style.scss";
@@ -46,6 +49,15 @@ const App = () => {
           element={
             <React.Suspense>
               <DepartmentsLazy />
+            </React.Suspense>
+          }
+        ></Route>
+
+        <Route
+          path="/Calendar"
+          element={
+            <React.Suspense>
+              <CalendarLazy />
             </React.Suspense>
           }
         ></Route>
