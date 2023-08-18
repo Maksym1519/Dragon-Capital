@@ -1,6 +1,6 @@
 .footer__wrapper {
     width: 100%;
-    padding: 0px 24px 24px 52px;
+    padding: 0px 120px 24px 120px;
     }
 .footer__container {
     width: 100%;
@@ -12,8 +12,18 @@
 .footer__nav {
     display: flex;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 47px;
 }
-.footer__nav:hover {
+.footer__nav__item:hover {
     color: #3D3D3D;
 }
+// .footer__nav__itemWrapper {
+//     border-bottom: 1px solid rgba(255,255,255,0.8);
+//    }
+.footer__nav__item {
+    color: rgba(255,255,255,0.8);
+    font-family: 'Plumb-400';
+    font-size: 15px;
+    line-height: 150%; 
+    text-decoration-line: underline;
+   }
