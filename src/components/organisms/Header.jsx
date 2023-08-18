@@ -5,7 +5,7 @@ import Text17400 from '../atoms/Text17400';
 import ProfileMenu from '../molecules/ProfileMenu';
 import Logo from '../../images/header-logo.svg';
 import Arrow from '../../images/header-arrow-down.svg';
-import Bell from '../../images/bell.svg';
+import Bell from '../../images/bell-dark.svg';
 import Ava from '../../images/header-white-ava.webp';
 import { useState } from 'react';
 
