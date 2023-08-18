@@ -129,13 +129,15 @@ const Main = () => {
                   </div>
                 </div>
                 <div className={m.birthdays__item}>
+                   <div className={m.birthdays__item__infoWrapper}>
                   <img src={Ava2} alt="ava" />
                   <div className={m.person__info}>
                     <p className={m.person__info__date}>
-                      <Text13400 text={"27.08"} />
+                      <Text13400 text={"27.08"} color="#fff"/>
                     </p>
-                    <p className={m.person__info__name}>Alexander Shevchenko</p>
+                    <p className={m.person__info__name}>Alex Prokopenko</p>
                   </div>
+                </div>
                   <div className={m.birthdays__status}>
                     <span className={m.text}>
                       <Text13700 text="Через 3 дн" color="#1DCA58" />

@@ -15,9 +15,16 @@ export const Button198 = (props) => {
         </div>
     )
 }
-export const Button167 = (props) => {
+export const Button160 = (props) => {
     return (
-        <div className={b.buttonLarge__wrapper}>
+        <div className={b.button160__wrapper}>
+           {props.text}
+        </div>
+    )
+}
+export const Button335 = (props) => {
+    return (
+        <div className={b.button335__wrapper}>
            {props.text}
         </div>
     )
