@@ -7,14 +7,16 @@ import Header from "../../organisms/Header";
 import Footer from "../../organisms/Footer";
 
 
-import PageTitle from "../../atoms/PageTitle";
+import PageTitle from "../../atoms/Headings/PageTitle";
 
 
-import CalendarSwiper from "../../organisms/Swipers/CalendarSwiper";
+import CalendarSwiper from "../../organisms/Swipers/CalendarSwiper"
+import FindEmployee from "../../organisms/Calendar/FindEmployee";
 
 
 const Calendar = () => {
 
+	
 
 	return (
 		<>
@@ -30,8 +32,10 @@ const Calendar = () => {
 
                     <div className="calendar-swiper-container">
                         <CalendarSwiper></CalendarSwiper>
-                    </div>
+					</div>
+					
 
+					<FindEmployee></FindEmployee>
 
 					<Footer />
 				</div>
