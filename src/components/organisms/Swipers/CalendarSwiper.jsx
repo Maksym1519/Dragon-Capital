@@ -42,19 +42,51 @@ const CalendarSwiper = () => {
                     }}
                 >
                     <SwiperSlide className='calendar-swiper__slide'>
-                        <CalendarCard></CalendarCard>
+                        <CalendarCard title="Май"></CalendarCard>
                     </SwiperSlide>
                     <SwiperSlide className='calendar-swiper__slide'>
-                        <CalendarCard></CalendarCard>
+                        <CalendarCard title="Июнь"></CalendarCard>
                     </SwiperSlide>
                     <SwiperSlide className='calendar-swiper__slide'>
-                        <CalendarCard></CalendarCard>
+                        <CalendarCard title="Июль"></CalendarCard>
                     </SwiperSlide>
                     <SwiperSlide className='calendar-swiper__slide'>
-                        <CalendarCard></CalendarCard>
+                        <CalendarCard title="Август"></CalendarCard>
                     </SwiperSlide>
                     <SwiperSlide className='calendar-swiper__slide'>
-                        <CalendarCard></CalendarCard>
+                        <CalendarCard title="Сентябрь"></CalendarCard>
+                    </SwiperSlide>
+
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Май"></CalendarCard>
+                    </SwiperSlide>
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Июнь"></CalendarCard>
+                    </SwiperSlide>
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Июль"></CalendarCard>
+                    </SwiperSlide>
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Август"></CalendarCard>
+                    </SwiperSlide>
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Сентябрь"></CalendarCard>
+                    </SwiperSlide>
+
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Май"></CalendarCard>
+                    </SwiperSlide>
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Июнь"></CalendarCard>
+                    </SwiperSlide>
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Июль"></CalendarCard>
+                    </SwiperSlide>
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Август"></CalendarCard>
+                    </SwiperSlide>
+                    <SwiperSlide className='calendar-swiper__slide'>
+                        <CalendarCard title="Сентябрь"></CalendarCard>
                     </SwiperSlide>
 
                 </Swiper>
