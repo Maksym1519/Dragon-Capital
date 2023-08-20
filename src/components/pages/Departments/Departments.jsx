@@ -9,7 +9,7 @@ import Footer from "../../organisms/Footer";
 import Text15400С from "../../atoms/Text15400С";
 import Text17700 from "../../atoms/Text17700";
 
-import PageTitle from "../../atoms/PageTitle";
+import PageTitle from "../../atoms/Headings/PageTitle";
 
 import WhiteWithGreyBorderDrop from "../../molecules/Dropdowns/WhiteWithGreyBorderDrop";
 
