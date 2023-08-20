@@ -1,6 +1,7 @@
 .footer__wrapper {
     width: 100%;
     padding: 0px 120px 48px 120px;
+    flex-shrink: 0;
     }
 .footer__container {
     width: 100%;
@@ -21,8 +22,8 @@
 //     border-bottom: 1px solid rgba(255,255,255,0.8);
 //    }
 .footer__nav__item {
-    color: rgba(255,255,255,0.8);
-    font-family: 'Plumb-400';
+    color: #3D3D3D;
+    font-family: 'PlumbC-400';
     font-size: 15px;
     line-height: 150%; 
     text-decoration-line: underline;

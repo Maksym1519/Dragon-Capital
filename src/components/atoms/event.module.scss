@@ -1,7 +1,8 @@
 .event__wrapper {
     display: flex;
+    max-height: fit-content;
     flex-direction: column;
-    align-items: flex-start;
-    row-gap: 5px;
-    line-height: auto;
+    align-items: center;
+    align-self: center;
+    line-height: 125%;
 }

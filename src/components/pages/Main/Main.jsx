@@ -53,237 +53,342 @@ const Main = () => {
   }, []);
   //---------------------------------------------------
   return (
-    <div className={m.main__wrapper}>
-      <HeaderWhite />
-      <div className={m.main__container}>
-        <div className={m.main__body}>
-          <div className={m.timeDate}>
-            <h3 className={m.timeDate__title}>
-              <Text26700 text={"Привет, Анастасия!"} color="#fff" />
-            </h3>
-            <p className={m.timeDate__time}>{currentTime}</p>
-            <p className={m.timeDate__date}>{currentDate}</p>
-            <div className={m.timeDate__quote}>
-              <p className={m.timeDate__quote__text}>
-                <Text15400
-                  text={
-                    "”Только тот человек может быть счастлив, который ставит перед собою большие цели и борется за них всеми своими силами.”"
-                  }
-                  color="#fff"
-                />
-              </p>
-              <p className={m.timeDate__quote__author}>
-                <Text17700 text={"М.И. Калинин"} color="#fff" />
-              </p>
-            </div>
-          </div>
-          <div className={m.important}>
-            <h3 className={m.important__title}>
-              <Text21700 text={"Важно"} color="#fff" />
-            </h3>
-            <p className={m.important__text1}>
-              <Text17400
-                text={
-                  "Тут будет показано обьявление всем пользователям или для опред. групп пользователей. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum sapien nunc, a faucibus leo tincidunt sed."
-                } color='#fff'
-              />
-            </p>
-            <p className={m.important__text2}>
-              <Text15400
-                text={
-                  "Подробнее"
-                } color='#fff'
-              />
-            </p>
-          </div>
-          <div className={m.celebrations}>
-            <div className={m.birthdays}>
-              <div className={m.birthdays__titleWrapper}>
-                <h3 className={m.birthdays__title}>
-                  <Text21700 text={"Дни рождения"} color='#fff'/>
+     <div className={m.main__BG}>
+      <div className={m.main__wrapper}>
+        <div className={m.main__opacity}>
+          <HeaderWhite />
+          <div className={m.main__container}>
+            <div className={m.main__body}>
+              <div className={m.timeDate}>
+                <h3 className={m.timeDate__title}>
+                  <Text26700 text={"Привет, Максим!"} color="#fff" />
                 </h3>
-                <span className={m.birthdays__button}>
-                  <Text13400
-                    text={"Смотреть все"}
-                    underline={true}
-                    color="rgba(255, 255, 255, 0.65)"
-                  />
-                </span>
-              </div>
-              <div className={m.birthdays__items__wrapper}>
-                <div
-                  className={m.birthdays__item + " " + m.birthdays__item_active}
-                >
-                  <img src={Ava1} alt="ava" />
-                  <div className={m.person__info}>
-                    <p className={m.person__info__date}>
-                      <Text13400 text={"27.08"} color='#fff'/>
-                    </p>
-                    <p className={m.person__info__name}>Alexander Shevchenko</p>
-                  </div>
-                  <div className={m.birthdays__status}>
-                    <span className={m.text}>
-                      <Text13700 text="Сегодня" color="#FFC700" />
-                    </span>
-                    <img src={Cake} alt="icon" />
-                  </div>
-                </div>
-                <div className={m.birthdays__item}>
-                   <div className={m.birthdays__item__infoWrapper}>
-                  <img src={Ava2} alt="ava" />
-                  <div className={m.person__info}>
-                    <p className={m.person__info__date}>
-                      <Text13400 text={"27.08"} color="#fff"/>
-                    </p>
-                    <p className={m.person__info__name}>Alex Prokopenko</p>
-                  </div>
-                </div>
-                  <div className={m.birthdays__status}>
-                    <span className={m.text}>
-                      <Text13700 text="Через 3 дн" color="#1DCA58" />
-                    </span>
-                  </div>
-                </div>
-                <div className={m.birthdays__item}>
-                  <img src={Ava3} alt="ava" />
-                  <div className={m.person__info}>
-                    <p className={m.person__info__date}>
-                      <Text13400 text={"27.08"} />
-                    </p>
-                    <p className={m.person__info__name}>Alexander Shevchenko</p>
-                  </div>
-                  <div className={m.birthdays__status}>
-                    <span className={m.text}>
-                      <Text13700 text="Через 4 дн" color="#1DCA58" />
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={m.holidays}>
-              <div className={m.birthdays__titleWrapper}>
-                <h3 className={m.birthdays__title}>
-                  <Text21700 text={"Ближайшие праздники"} color='#fff'/>
-                </h3>
-                <span className={m.birthdays__button}>
-                  <Text13400
-                    text={"Смотреть все"}
-                    underline={true}
-                    color="rgba(255, 255, 255, 0.65)"
-                  />
-                </span>
-              </div>
-              <div className={m.holidays__items__wrapper}>
-                <div className={m.holidays__item}>
-                  <div className={m.event}>
-                    <Event
-                      text1={<Text13400 text="25.12" color='#fff'/>}
-                      text2={<Text17700 text="Christmas Eve" color='#fff'/>}
+                <p className={m.timeDate__time}>{currentTime}</p>
+                <p className={m.timeDate__date}>{currentDate}</p>
+                <div className={m.timeDate__quote}>
+                  <p className={m.timeDate__quote__text}>
+                    <Text15400
+                      text={
+                        "”Только тот человек может быть счастлив, который ставит перед собою большие цели и борется за них всеми своими силами.”"
+                      }
+                      color="#fff"
                     />
-                  </div>
-                  <p className={m.holidays__item__date}>
-                    <Text12400 text="Через 34 дн." color="#1DCA58" />
                   </p>
-                </div>
-                <div className={m.holidays__item}>
-                  <div className={m.event}>
-                    <Event
-                      text1={<Text13400 text="01.01" color='#fff'/>}
-                      text2={<Text17700 text="New Year Eve" color='#fff'/>}
-                    />
-                  </div>
-                  <p className={m.holidays__item__date}>
-                    <Text12400 text="Через 34 дн" color="#1DCA58" />
+                  <p className={m.timeDate__quote__author}>
+                    <Text17700 text={"М.И. Калинин"} color="#fff" />
                   </p>
                 </div>
               </div>
+              <div className={m.important}>
+                <h3 className={m.important__title}>
+                  <Text21700 text={"Важно"} color="#fff" />
+                </h3>
+                <p className={m.important__text1}>
+                  <Text17400
+                    text={
+                      "Тут будет показано обьявление всем пользователям или для опред. групп пользователей. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum sapien nunc, a faucibus leo tincidunt sed."
+                    }
+                    color="#fff"
+                  />
+                </p>
+                <p className={m.important__text2}>
+                  <Text15400 text={"Подробнее"} color="#fff" />
+                </p>
+              </div>
+              <div className={m.celebrations}>
+                <div className={m.birthdays}>
+                  <div className={m.birthdays__titleWrapper}>
+                    <h3 className={m.birthdays__title}>
+                      <Text21700 text={"Дни рождения"} color="#fff" />
+                    </h3>
+                    <span className={m.birthdays__button}>
+                      <Text13400
+                        text={"Смотреть все"}
+                        underline={true}
+                        color="rgba(255, 255, 255, 0.65)"
+                      />
+                    </span>
+                  </div>
+                  <div className={m.birthdays__items__wrapper}>
+                    <div
+                      className={
+                        m.birthdays__item + " " + m.birthdays__item_active
+                      }
+                    >
+                      <div className={m.birthdays__item__infoWrapper}>
+                        <img src={Ava1} alt="ava" />
+                        <div className={m.person__info}>
+                          <p className={m.person__info__date}>
+                            <Text13400 text={"27.08"} color="#fff" />
+                          </p>
+                          <p className={m.person__info__name}>
+                            Svetlana Adokitsa
+                          </p>
+                        </div>
+                      </div>
+                      <div className={m.birthdays__status}>
+                        <span className={m.text}>
+                          <Text13700 text="Сегодня" color="#FFC700" />
+                        </span>
+                        <img src={Cake} alt="icon" />
+                      </div>
+                    </div>
+                    <div className={m.birthdays__item}>
+                      <div className={m.birthdays__item__infoWrapper}>
+                        <img src={Ava2} alt="ava" />
+                        <div className={m.person__info}>
+                          <p className={m.person__info__date}>
+                            <Text13400 text={"27.08"} color="#fff" />
+                          </p>
+                          <p className={m.person__info__name}>
+                            Alex Prokopenko
+                          </p>
+                        </div>
+                      </div>
+                      <div className={m.birthdays__status}>
+                        <span className={m.text}>
+                          <Text13700 text="Через 3 дн" color="#1DCA58" />
+                        </span>
+                      </div>
+                    </div>
+                    <div className={m.birthdays__item}>
+                      <div className={m.birthdays__item__infoWrapper}>
+                        <img src={Ava3} alt="ava" />
+                        <div className={m.person__info}>
+                          <p className={m.person__info__date}>
+                            <Text13400 text={"27.08"} color="#fff" />
+                          </p>
+                          <p className={m.person__info__name}>Jurii Kozub</p>
+                        </div>
+                      </div>
+                      <div className={m.birthdays__status}>
+                        <span className={m.text}>
+                          <Text13700 text="Через 4 дн" color="#1DCA58" />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={m.holidays}>
+                  <div className={m.birthdays__titleWrapper}>
+                    <h3 className={m.birthdays__title}>
+                      <Text21700 text={"Ближайшие праздники"} color="#fff" />
+                    </h3>
+                    <span className={m.birthdays__button}>
+                      <Text13400
+                        text={"Смотреть все"}
+                        underline={true}
+                        color="rgba(255, 255, 255, 0.65)"
+                      />
+                    </span>
+                  </div>
+                  <div className={m.holidays__items__wrapper}>
+                    <div className={m.holidays__item}>
+                      <div className={m.event}>
+                        <Event
+                          text1={<Text13400 text="25.12" color="#fff" />}
+                          text2={
+                            <Text17700 text="Christmas Eve" color="#fff" />
+                          }
+                        />
+                      </div>
+                      <p className={m.holidays__item__date}>
+                        <Text12400 text="Через 34 дн." color="#1DCA58" />
+                      </p>
+                    </div>
+                    <div className={m.holidays__item}>
+                      <div className={m.event}>
+                        <Event
+                          text1={<Text13400 text="01.01" color="#fff" />}
+                          text2={<Text17700 text="New Year Eve" color="#fff" />}
+                        />
+                      </div>
+                      <p className={m.holidays__item__date}>
+                        <Text12400 text="Через 34 дн" color="#1DCA58" />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={m.missing}>
+                <div className={m.birthdays__titleWrapper}>
+                  <h3 className={m.birthdays__title}>
+                    <Text21700 text={"Отсутствующие"} color="#fff" />
+                  </h3>
+                  <span className={m.birthdays__button}>
+                    <Text13400
+                      text={"Смотреть все"}
+                      underline={true}
+                      color="rgba(255, 255, 255, 0.65)"
+                    />
+                  </span>
+                </div>
+                <div className={m.missing__items__wrapper}>
+                  {/* item1----------------------------------------------- */}
+                  <div className={m.missing__item}>
+                    <div className={m.missing__item__header}>
+                      <h4 className={m.item__header__title}>
+                        <Text13700 text="Work on holiday" color="#7CD8FF" />
+                      </h4>
+                      <p className={m.item__header__date}>
+                        <Text13400
+                          text="21.09.2018 - 29.09.2018"
+                          color="#fff"
+                        />
+                      </p>
+                    </div>
+                    <div className={m.missing__item__personInfo}>
+                      <img src={Ava3} alt="Ava" />
+                      <div className={m.person__description}>
+                        <Event
+                          text1={
+                            <Text15700
+                              text="Valeriy Necheporenko"
+                              color="#fff"
+                            />
+                          }
+                          text2={
+                            <Text13400
+                              text="Marketing department"
+                              color="#fff"
+                            />
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  {/* item2----------------------------------------------- */}
+                  <div className={m.missing__item}>
+                    <div className={m.missing__item__header}>
+                      <h4 className={m.item__header__title}>
+                        <Text13700 text="Business trip" color="#1DCA58" />
+                      </h4>
+                      <p className={m.item__header__date}>
+                        <Text13400 text="29.09.2018" color="#fff" />
+                      </p>
+                    </div>
+                    <div className={m.missing__item__personInfo}>
+                      <img src={Ava2} alt="Ava" />
+                      <div className={m.person__description}>
+                        <Event
+                          text1={
+                            <Text15700
+                              text="Alexander Shevchenko"
+                              color="#fff"
+                            />
+                          }
+                          text2={
+                            <Text13400
+                              text="Marketing department"
+                              color="#fff"
+                            />
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  {/* item3----------------------------------------------- */}
+                  <div className={m.missing__item}>
+                    <div className={m.missing__item__header}>
+                      <h4 className={m.item__header__title}>
+                        <Text13700 text="Vacation" color="#FFC700" />
+                      </h4>
+                      <p className={m.item__header__date}>
+                        <Text13400
+                          text="21.09.2018 - 29.09.2018"
+                          color="#fff"
+                        />
+                      </p>
+                    </div>
+                    <div className={m.missing__item__personInfo}>
+                      <img src={Ava1} alt="Ava" />
+                      <div className={m.person__description}>
+                        <Event
+                          text1={<Text15700 text="Olga Sumska" color="#fff" />}
+                          text2={
+                            <Text13400
+                              text="Marketing department"
+                              color="#fff"
+                            />
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  {/* item4----------------------------------------------- */}
+                  <div className={m.missing__item}>
+                    <div className={m.missing__item__header}>
+                      <h4 className={m.item__header__title}>
+                        <Text13700 text="Sick leave" color="#5F82FF" />
+                      </h4>
+                      <p className={m.item__header__date}>
+                        <Text13400
+                          text="21.09.2018 - 29.09.2018"
+                          color="#fff"
+                        />
+                      </p>
+                    </div>
+                    <div className={m.missing__item__personInfo}>
+                      <img src={Ava3} alt="Ava" />
+                      <div className={m.person__description}>
+                        <Event
+                          text1={
+                            <Text15700
+                              text="Valeriy Necheporenko"
+                              color="#fff"
+                            />
+                          }
+                          text2={
+                            <Text13400
+                              text="Marketing department"
+                              color="#fff"
+                            />
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  {/* item5----------------------------------------------- */}
+                  <div className={m.missing__item}>
+                    <div className={m.missing__item__header}>
+                      <h4 className={m.item__header__title}>
+                        <Text13700 text="Study leave" color="#FF68F0" />
+                      </h4>
+                      <p className={m.item__header__date}>
+                        <Text13400
+                          text="21.09.2018 - 29.09.2018"
+                          color="#fff"
+                        />
+                      </p>
+                    </div>
+                    <div className={m.missing__item__personInfo}>
+                      <img src={Ava2} alt="Ava" />
+                      <div className={m.person__description}>
+                        <Event
+                          text1={
+                            <Text15700
+                              text="Valeriy Necheporenko"
+                              color="#fff"
+                            />
+                          }
+                          text2={
+                            <Text13400
+                              text="Marketing department"
+                              color="#fff"
+                            />
+                          }
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className={m.missing}>
-            <div className={m.birthdays__titleWrapper}>
-              <h3 className={m.birthdays__title}>
-                <Text21700 text={"Отсутствующие"} color='#fff'/>
-              </h3>
-              <span className={m.birthdays__button}>
-                <Text13400
-                  text={"Смотреть все"}
-                  underline={true}
-                  color="rgba(255, 255, 255, 0.65)"
-                />
-              </span>
-            </div>
-         <div className={m.missing__items__wrapper}>
-            {/* item1----------------------------------------------- */}
-            <div className={m.missing__item}>
-              <div className={m.missing__item__header}>
-                <h4 className={m.item__header__title}><Text13700 text='Work on holiday' color='#7CD8FF'/></h4>
-                <p className={m.item__header__date}><Text13400 text='21.09.2018 - 29.09.2018' color='#fff'/></p>
-              </div>
-              <div className={m.missing__item__personInfo}>
-                 <img src={Ava3} alt="Ava" />
-                 <div className={m.person__description}>
-                  <Event text1={<Text15700 text='Valeriy Necheporenko' color='#fff'/>} text2={<Text13400 text='Marketing department' color='#fff'/>}/>
-                 </div>
-              </div>
-            </div>
-            {/* item2----------------------------------------------- */}
-            <div className={m.missing__item}>
-              <div className={m.missing__item__header}>
-                <h4 className={m.item__header__title}><Text13700 text='Business trip' color='#1DCA58'/></h4>
-                <p className={m.item__header__date}><Text13400 text='29.09.2018' color='#fff'/></p>
-              </div>
-              <div className={m.missing__item__personInfo}>
-                 <img src={Ava2} alt="Ava" />
-                 <div className={m.person__description}>
-                  <Event text1={<Text15700 text='Alexander Shevchenko' color='#fff'/>} text2={<Text13400 text='Marketing department' color='#fff'/>}/>
-                 </div>
-              </div>
-            </div>
-              {/* item3----------------------------------------------- */}
-            <div className={m.missing__item}>
-              <div className={m.missing__item__header}>
-                <h4 className={m.item__header__title}><Text13700 text='Vacation' color='#FFC700'/></h4>
-                <p className={m.item__header__date}><Text13400 text='21.09.2018 - 29.09.2018' color='#fff'/></p>
-              </div>
-              <div className={m.missing__item__personInfo}>
-                 <img src={Ava1} alt="Ava" />
-                 <div className={m.person__description}>
-                  <Event text1={<Text15700 text='Olga Sumska' color='#fff'/>} text2={<Text13400 text='Marketing department' color='#fff'/>}/>
-                 </div>
-              </div>
-            </div>
-              {/* item4----------------------------------------------- */}
-            <div className={m.missing__item}>
-              <div className={m.missing__item__header}>
-                <h4 className={m.item__header__title}><Text13700 text='Sick leave' color='#5F82FF'/></h4>
-                <p className={m.item__header__date}><Text13400 text='21.09.2018 - 29.09.2018' color='#fff'/></p>
-              </div>
-              <div className={m.missing__item__personInfo}>
-                 <img src={Ava3} alt="Ava" />
-                 <div className={m.person__description}>
-                  <Event text1={<Text15700 text='Valeriy Necheporenko' color='#fff'/>} text2={<Text13400 text='Marketing department' color='#fff'/>}/>
-                 </div>
-              </div>
-            </div>
-              {/* item5----------------------------------------------- */}
-            <div className={m.missing__item}>
-              <div className={m.missing__item__header}>
-                <h4 className={m.item__header__title}><Text13700 text='Study leave' color='#FF68F0'/></h4>
-                <p className={m.item__header__date}><Text13400 text='21.09.2018 - 29.09.2018' color='#fff'/></p>
-              </div>
-              <div className={m.missing__item__personInfo}>
-                 <img src={Ava2} alt="Ava" />
-                 <div className={m.person__description}>
-                  <Event text1={<Text15700 text='Valeriy Necheporenko' color='#fff'/>} text2={<Text13400 text='Marketing department' color='#fff'/>}/>
-                 </div>
-              </div>
-            </div>
-         </div>
-          </div>
+          <Footer textColor="rgba(255, 255, 255, 0.8)" />
         </div>
       </div>
-      <Footer textColor='rgba(255, 255, 255, 0.8)' />
-    </div>
+     </div>
   );
 };
 export default Main;

@@ -1,28 +1,28 @@
 .birthdays__wrapper {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-}
+  }
 .birthdays__body {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
   background: #fafafa;
-  padding-top: 60px;
-  flex: 0 1 auto;
+  padding-top: 56px;
+  flex: 1;
 }
 .birthdays__container {
   max-width: 1680px;
   margin: 0 auto;
-  
+  flex: 1;
   & .header {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
     & .title {
         letter-spacing: 2.8px;
     }
@@ -51,4 +51,65 @@
         }
     }
   }
+}
+.birthdays__items__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+ }
+.birthdays__item__wrapper {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  //grid-template-columns: 243px 107px 211px 69px;
+  grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+}
+.templates__padding {
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+.header__margin {
+  margin-bottom: 20px;
+}
+.templates__header__cell {
+color: var(--unnamed, #3D3D3D);
+font-family: 'PlumbC-400';
+font-size: 15px;
+line-height: 150%;
+display: flex;
+align-items: center;
+}
+.templates__header__cell:nth-child(2) {
+  margin-left: 59px;
+}
+.templates__header__cell:nth-child(3) {
+  margin-left: 20px;
+}
+.templates__header__cell:nth-child(4) {
+  margin-left: 126px;
+}
+.templates__header__cell:nth-child(5) {
+  margin-left: 60px;
+}
+.templates__header__cell:nth-child(6) {
+  margin-left: 28px;
+}
+.cell__wrapper {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.employee__item {
+  height: 80px;
+  background: #fff;
+  padding-left: 30px;
+}
+.flex__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
