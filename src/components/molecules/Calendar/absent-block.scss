@@ -1,0 +1,103 @@
+.absent-block {
+	width: 579px;
+	height: 178px;
+	display: flex;
+	flex-direction: row;
+
+	&__color-tag {
+		width: 3px;
+		height: 79px;
+	}
+
+	&__main-part {
+		margin: 0px 0 0 25px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		font-family: Plumb-700;
+		font-size: 13px;
+		line-height: 130%; /* 16.9px */
+	}
+
+	&__account {
+		margin: 12px 0 0 0;
+		display: flex;
+		flex-direction: row;
+		gap: 15px;
+	}
+
+	&__accont-avatar {
+		width: 50px;
+		height: 50px;
+	}
+
+	&__acconut-texts {
+		margin: 5px 0 0 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__account-name {
+		color: var(--unnamed, #3d3d3d);
+		width: 155px;
+		font-family: Plumb-700;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+	}
+
+	&__accont-partner {
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 13px;
+		opacity: 0.4;
+		line-height: 130%; /* 16.9px */
+	}
+
+	&__description {
+		margin: 17px 0 0 -1px;
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 13px;
+		line-height: 140%; /* 18.2px */
+		max-width: 310px;
+	}
+
+	&__time-block {
+		margin: 10px 29px 0 0;
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		align-items: flex-end;
+		width: 100%;
+	}
+
+	&__time-numbers {
+		color: var(--unnamed, #3d3d3d);
+		text-align: right;
+		font-family: Plumb-700;
+		font-size: 13px;
+		line-height: 130%; /* 16.9px */
+	}
+
+	&__time-button {
+		display: flex;
+		flex-direction: row;
+		gap: 4px;
+		color: var(--1, #277d59);
+		text-align: right;
+		font-family: Plumb-700;
+		font-size: 13px;
+		line-height: 130%; /* 16.9px */
+		width: fit-content;
+		background: transparent;
+	}
+
+	&__green-arrow {
+		margin: 3px 0 0 0;
+		width: 8px;
+		height: 8px;
+	}
+}
