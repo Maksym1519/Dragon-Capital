@@ -39,15 +39,30 @@ textarea {
 	padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+    min-width: 0;
 
-html{
-  height: 100%;
 }
-body{
-  height: 100%;
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    min-width: 0;
 }
-#root{
-  height: 100%;
+
+#root {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+	height: 100%;
+    overflow-x: hidden;
+    min-width: 0;
 }
 
 .p-wrapper {
@@ -70,15 +85,13 @@ body{
 		position: relative;
 
 		// overflow-x: hidden;
+		// overflow-x: hidden;
+
+		&.calendar{
+			margin: 55px 0 0 0;
+			max-width: 1680px;
+		}
 	}
-	// &__dragon-background {
-	// 	position: absolute;
-	// 	top: 693px;
-	// 	left: -254px;
-	// 	width: 802px;
-	// 	height: 743px;
-	// 	z-index: 0;
-	// 	pointer-events: all;
-	// 	object-fit: cover;
-	// }
 }
+
+
