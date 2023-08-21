@@ -1,5 +1,5 @@
 import h from './holidays.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import Header from '../../organisms/Header';
 import Footer from '../../organisms/Footer';
 import HolidaysItem from '../../organisms/HolidaysItem/HolidaysItem';
@@ -22,14 +22,16 @@ const Holidays = () => {
             <h3><Text60700 text='Праздники'/></h3>
             <div className={h.holidays__sorting}>
               <div className={h.lasted}>
-                <Link to='./HolidaysLasted'>
+                <Link to='/HolidaysLasted'>
                 <Button213 text={<Text15700 text='Показать прошедшие'/>}/>
                  </Link>
               </div>
+              <Link to='/HolidaysAdmin'>
               <div className={h.edit}>
-              <img src={Pen} alt="pen" />
+               <img src={Pen} alt="pen" />
                    <TextUnderLine text={<Text15400С text='Редактировать' color='#277D59'/>}/>
-              </div>
+               </div>
+              </Link>
             </div>
             <div className={h.holidays__items__wrapper}>
               <HolidaysItem text1='Новый Год' text2='Выходной' text3='07.01.2019'  color='#EE3424'/>

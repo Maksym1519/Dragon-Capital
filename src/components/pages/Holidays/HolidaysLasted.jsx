@@ -1,4 +1,5 @@
 import h from './holidays.module.scss';
+import { Link } from 'react-router-dom';
 import Header from '../../organisms/Header';
 import Footer from '../../organisms/Footer';
 import HolidaysItem from '../../organisms/HolidaysItem/HolidaysItem';
@@ -11,9 +12,15 @@ import TextUnderLine from '../../templates/TextUnderline';
 import Pen from '../../../images/pen.svg';
 import Arrow from '../../../images/arrow-period.svg';
 import Dragon from '../../../images/dragon-holidays.svg'
+import { useState } from 'react';
 
 const HolidaysLasted = () => {
-    return (
+  const  [isShown, setIsShowen] = useState(false);
+  const showToggle = () => {
+    setIsShowen(!isShown)
+  }
+ 
+    return ( 
         <div className={h.holidays__wrapper}>
         <Header />
         <div className={h.holidays__BG__wrapper}>
@@ -21,14 +28,25 @@ const HolidaysLasted = () => {
          <div className={h.holidays__body}>
           <h3><Text60700 text='Праздники'/></h3>
           <div className={h.holidays__sorting}>
-            <div className={h.lasted}>
-                <Button233 text={<Text15700 text='Показать еще прошедшие' color='rgba(61, 61, 61, 0.6)'/>}/>
+            <div className={h.lasted} onClick={showToggle}>
+            <Button233
+  text={
+    isShown ? (
+      <Text15700 text='Показать меньше' color='rgba(61, 61, 61, 0.6)' />
+    ) : (
+      <Text15700 text='Показать еще прошедшие' color='rgba(61, 61, 61, 0.6)' />
+    )
+  }
+/>
+
               
             </div>
+            <Link to='/HolidaysAdd'>
             <div className={h.edit}>
             <img src={Pen} alt="pen" />
                  <TextUnderLine text={<Text15400С text='Редактировать' color='#277D59'/>}/>
             </div>
+            </Link>
           </div>
           <h4 className={h.lasted__subtitle}><Text28700 text='Прошедшие'/></h4>
           <div className={h.holidays__items__wrapper}>
@@ -37,6 +55,15 @@ const HolidaysLasted = () => {
             <HolidaysItem text1='Новый Год' text2='Выходной' text3='07.01.2019' color='#EE3424'/>
             <HolidaysItem text1='Новый Год' text2='Выходной' text3='07.01.2019' color='#EE3424'/>
             <HolidaysItem text1='Международный женский день' text2='Выходной' text3='07.01.2019' color='#EE3424'/>
+            {isShown && (
+            <div className={h.holidays__items__wrapper}>
+             <HolidaysItem text1='Новый Год' text2='Выходной' text3='07.01.2019'  color='#EE3424'/>
+             <HolidaysItem text1='Международный женский день' text2='Выходной' text3='07.01.2019' color='#EE3424'/>
+             <HolidaysItem text1='Новый Год' text2='Выходной' text3='07.01.2019' color='#EE3424'/>
+             <HolidaysItem text1='Новый Год' text2='Выходной' text3='07.01.2019' color='#EE3424'/>
+             <HolidaysItem text1='Международный женский день' text2='Выходной' text3='07.01.2019' color='#EE3424'/>
+             </div>
+            )}
              </div>
              <h4 className={h.lasted__subtitle + " " + h.lasted__secondSubtitle}><Text28700 text='Будущие'/></h4>
              <div className={h.holidays__items__wrapper}>

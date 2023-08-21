@@ -28,6 +28,12 @@ const HolidaysAdminLazy = React.lazy(() =>
 const HolidaysAddLazy = React.lazy(() =>
   import("./components/pages/Holidays/HolidaysAdd")
 );
+const NotificationsLazy = React.lazy(() =>
+  import("./components/pages/Notifications/Notifications")
+);
+const EmployeesLazy = React.lazy(() =>
+  import("./components/pages/Employees/Employees")
+);
 
 import "./fonts.scss";
 import "./style.scss";
@@ -44,6 +50,8 @@ const App = () => {
         <Link to="/HolidaysLasted">HolidaysLasted</Link>
         <Link to="/HolidaysAdmin">HolidaysAdmin</Link>
         <Link to="/HolidaysAdd">HolidaysAdd</Link>
+        <Link to="/Notifications">Notifications</Link>
+        <Link to="/Employees">Employees</Link>
       </nav>
       <Routes>
         <Route
@@ -118,6 +126,22 @@ const App = () => {
           element={
             <React.Suspense>
               <HolidaysAddLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/Notifications"
+          element={
+            <React.Suspense>
+              <NotificationsLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/Employees"
+          element={
+            <React.Suspense>
+              <EmployeesLazy />
             </React.Suspense>
           }
         ></Route>
