@@ -1,11 +1,11 @@
 .calendar-find {
-    margin: 70px 0 0 0;
+    margin: 0px 0 0 0;
     display: flex;
     flex-direction: column;
-    gap: 31px;
+    gap: 27px;
 	width: 398px;
 	&__card {
-        padding: 30px 30px 60px 30px;
+        padding: 31px 28px 60px 28px;
         display: flex;
         flex-direction: column;
         gap: 29px;
@@ -16,9 +16,10 @@
 	}
 
 	&__dropdowns{
+		margin: 0 0 0 2px;
 		display: flex;
 		flex-direction: column;
-		gap: 7px;
+		gap: 21px;
 	}
 
     &__row {
@@ -56,12 +57,12 @@
 		height: 0;
 		visibility: hidden;
 		&.active {
-			margin: 20px 0 0 0px;
+			margin: 21.5px 0 0 0px;
 			height: auto;
 			visibility: visible;
 			display: flex;
 			flex-direction: column;
-			gap: 15px;
+			gap: 7px;
 			&.inner {
 				margin: 16px 0 0 30px;
 			}
