@@ -25,7 +25,7 @@ const FindEmployee = (props) => {
             <BlockHeading text="Найти сотрудника"></BlockHeading>
 
             <div className="calendar-find__card">
-                <SearchInput width={338} placeholder="Search by name"></SearchInput>
+                <SearchInput width={340} placeholder="Search by name"></SearchInput>
                 <div className="calendar-find__dropdowns">
                     <div className="calendar-find__row drop" >
                         <div className="calendar-find__preview" onClick={() => { handleDropsClick(0); }}>

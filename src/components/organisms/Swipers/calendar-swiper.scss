@@ -1,10 +1,11 @@
 .calendar-swiper {
 	position: relative;
-	width: 1760px;
+	width: 100%;
+	max-width: 1680px;
 	min-width: 0;
 
 	&__slider {
-		// width: 100%;
+		width: 100%;
 	}
 
 	&__slide {
@@ -21,15 +22,19 @@
 
 	&__arrow {
 		margin: 1px 4px 0 0;
-		height: 25px;
-		width: 13px;
+		height: 30px;
+		width: 18px;
 	}
+}
+
+.calendar-swiper-container{
+	max-width: 1760px;
 }
 
 .calendar-swiper-swiper-button-next {
 	position: absolute;
-	top: -85px;
-	left: 408px;
+	top: -91px;
+	left: 400px;
 	width: 26px;
 	height: 13px;
 	transform: rotate(180deg);
@@ -41,8 +46,8 @@
 
 .calendar-swiper-swiper-button-prev {
 	position: absolute;
-	top: -85px;
-	left: 360px;
+	top: -92px;
+	left: 355px;
 
 	margin-right: 3px;
 	width: 26px;

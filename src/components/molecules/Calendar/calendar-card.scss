@@ -1,11 +1,12 @@
 .calendar-card {
-	width: 328px;
-	height: 323px;
+	margin: -1px 0 0 0;
+	width: 326px;
+	height: 320px;
 	flex-shrink: 0;
 	background: #fff;
 	display: flex;
 	flex-direction: column;
-	padding: 22px 20px 0 20px;
+	padding: 20.5px 20px 0 18.5px;
 	&__title {
 		margin: 0 0 14px 10px;
 		color: var(--unnamed, #3d3d3d);
@@ -32,7 +33,7 @@
 		line-height: 150%; /* 22.5px */
 
 		&.grey {
-			color: var(--unnamed, #3d3d3d);
+			color:  rgba(#3d3d3d, 0.3);
 		}
 
 		&.red {
