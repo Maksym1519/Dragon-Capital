@@ -8,8 +8,13 @@ import Delete from "../../../images/delete-red.svg";
 import Arrow from "../../../images/header-arrow-down.svg";
 import Calendar from "../../../images/holiday-calendar.svg";
 import ArrowSide from '../../../images/arrowSide.svg'
+import { useState } from "react";
 
 const HolidaysAdminItem = (props) => {
+  const [isDelete, setIsDelete] = useState(true)
+  const deleteItem = () => {
+    setIsDelete(false)
+  }
     let borderColor;
     function colored () {
    if (props.redDay) {
@@ -26,6 +31,8 @@ const HolidaysAdminItem = (props) => {
 }
 colored()
   return (
+ <>
+ {isDelete &&
     <div className={ha.holidays__item} style={borderColor}>
         {/* //cell1----------------------------------- */}
       <div className={ha.holidays__item__cell + " " + ha.cell1}>
@@ -58,7 +65,7 @@ colored()
         {props.double && <img src={ArrowSide} alt="arrow" className={ha.sideArrow}/>}
     </div>
        {/* //cell4----------------------------------- */}
-      <div className={ha.holidays__item__cell + " " + ha.cell4}>
+    <div className={ha.holidays__item__cell + " " + ha.cell4} onClick={deleteItem}>
         <img src={Delete} alt="delete" />
         <TextUnderLine
           text={<Text15400 text="Удалить" color="#EE3424" />}
@@ -66,6 +73,8 @@ colored()
         />
       </div>
     </div>
+}
+</>
   );
 };
 

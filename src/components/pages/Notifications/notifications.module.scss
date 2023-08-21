@@ -1,0 +1,111 @@
+.notifications__wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    }
+  .notifications__body {
+      width: 100%;
+      min-height: 100%;
+    background: #fafafa;
+    padding-top: 56px;
+    flex: 1;
+  }
+  .notifications__container {
+    max-width: 59.8%;
+   align-self: flex-start;
+    flex: 1;
+    padding-left: 120px;
+    & .header {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 54px;
+      & .title {
+          letter-spacing: 2.8px;
+      }
+      & .notifications__sorting {
+          display: flex;
+          align-items: flex-end;
+          padding-top: 13px;
+          & .monthTitle {
+              color: var(--unnamed, #3D3D3D);
+              text-align: right;
+              font-family: 'Plumb-400';
+              font-size: 15px;
+              line-height: 150%; 
+              margin-right: 15px;
+              opacity: 0.4;
+          }
+          & .monthes__menu {
+              display: flex;
+              align-items: center;
+              column-gap: 11px;
+              margin-right: 52px;
+          }
+          & .showAll {
+              border-bottom: 1px solid #277D59;
+              padding-bottom: 1px;
+          }
+      }
+    }
+  }
+  .notifications__items__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 66px;
+   }
+  .notifications__item__wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    //grid-template-columns: 243px 107px 211px 69px;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+  }
+  .templates__padding {
+    padding-left: 30px;
+    margin-bottom: 15px;
+  }
+  .header__margin {
+    margin-bottom: 20px;
+  }
+  .templates__header__cell {
+  color: var(--unnamed, #3D3D3D);
+  font-family: 'PlumbC-400';
+  font-size: 15px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  }
+    .templates__header__cell:nth-child(2) {
+    margin-left: 101px;
+  }
+  .templates__header__cell:nth-child(3) {
+    margin-left: 166px;
+  }
+  .templates__header__cell:nth-child(4) {
+    margin-left: 149px;
+  }
+   .cell__wrapper {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  .employee__item {
+    height: 80px;
+    background: #fff;
+    padding-left: 30px;
+  }
+  .flex__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
