@@ -10,10 +10,10 @@ const SendRequestTransfer = (props) => {
             <RequestSearchBlock></RequestSearchBlock>
             <div className="send-request-request__line"></div>
             <div className="send-request-request__title">Выберите даты</div>
-            
+
             <div className="send-request-request__line"></div>
             <div className="send-request-request__buttons transfer">
-                
+
                 <div className="send-request-request__button">Отправить запрос</div>
             </div>
         </div>
