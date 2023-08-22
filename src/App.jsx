@@ -34,6 +34,12 @@ const NotificationsLazy = React.lazy(() =>
 const EmployeesLazy = React.lazy(() =>
   import("./components/pages/Employees/Employees")
 );
+const MyPageLazy = React.lazy(() =>
+  import("./components/pages/MyPage/MyPage")
+);
+const UserPageLazy = React.lazy(() =>
+  import("./components/pages/UserPage/UserPage")
+);
 
 import "./fonts.scss";
 import "./style.scss";
@@ -52,6 +58,8 @@ const App = () => {
         <Link to="/HolidaysAdd">HolidaysAdd</Link>
         <Link to="/Notifications">Notifications</Link>
         <Link to="/Employees">Employees</Link>
+        <Link to="/MyPage">MyPage</Link>
+        <Link to="/UserPage">UserPage</Link>
       </nav>
       <Routes>
         <Route
@@ -142,6 +150,22 @@ const App = () => {
           element={
             <React.Suspense>
               <EmployeesLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/MyPage"
+          element={
+            <React.Suspense>
+              <MyPageLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/UserPage"
+          element={
+            <React.Suspense>
+              <UserPageLazy />
             </React.Suspense>
           }
         ></Route>

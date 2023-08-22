@@ -14,8 +14,14 @@ import AccordionTitle from '../../molecules/Employee/AccordionTitle';
 import ImgTextTemplate from '../../templates/ImgTextTemplate';
 import ButtonsTeam from '../../atoms/Buttons/ButtonsTeam/ButtonsTeam';
 import Radio from '../../atoms/Radio';
+import EmployeeItem from '../../organisms/Employee/EmployeeItem';
+import Button172 from '../../atoms/Buttons/Button172';
 import Plus from '../../../images/plus-employee.svg';
 import Arrow from '../../../images/header-arrow-down.svg'
+import Ava1 from '../../../images/main-ava1.webp';
+import Ava2 from '../../../images/main-ava2.webp';
+import Ava3 from '../../../images/main-ava3.webp';
+import Ava4 from '../../../images/avatar4.webp';
 
 
 const Employees = () => {
@@ -65,13 +71,26 @@ const Employees = () => {
                  </div>
                </div>
                <div className={e.items__wrapper}>
-                  <div className={e.item__wrapper}>
-
+                  <div className={e.item__wrapper__header + " " + e.item__wrapper}>
+                    <div className={e.item__wrapper__cell}><Text15400С text='ФИО и должность' color='rgba(61, 61, 61, 0.4)'/></div> 
+                    <div className={e.item__wrapper__cell}><Text15400С text='Департамент' color='rgba(61, 61, 61, 0.4)'/></div> 
+                    <div className={e.item__wrapper__cell}><Text15400С text='Вн. номер' color='rgba(61, 61, 61, 0.4)'/></div> 
+                    <div className={e.item__wrapper__cell}><Text15400С text='Телефон' color='rgba(61, 61, 61, 0.4)'/></div> 
+                    <div className={e.item__wrapper__cell}><Text15400С text='Email' color='rgba(61, 61, 61, 0.4)'/></div> 
+                  </div>
+                  <EmployeeItem img={Ava2} color='#7CD8FF' text='Work on holiday' text2='Obolon Residences' bColor='#5F82FF'/>
+                  <EmployeeItem img={Ava1} color='#1DCA58' text='Business trip' text2='Obolon Residences' bColor='#5F82FF'/>
+                  <EmployeeItem img={Ava3} color='#FF68F0' text='Study leave' text2='Obolon Residences' bColor='#5F82FF' team1={<ButtonsTeam text={<Text15400С text='Green Hills' color='#FE9800'/>} bg='rgba(254, 152, 0, 0.1)'/>}/>
+                  <EmployeeItem img={Ava4} color='#5F82FF' text='Work on holiday' text2='Moe’s Tavern' bColor='#142A76'/>
+                  <div className={e.boxShadow}>
+                  <EmployeeItem img={Ava1} color='#FFC700' text='Vacation' text2='Obolon Residences' bColor='#5F82FF' team1={<ButtonsTeam text={<Text15400С text='Green Hills' color='#FE9800'/>} bg='rgba(254, 152, 0, 0.1)'/>} team2={<ButtonsTeam text={<Text15400С text='Dilova' color='rgba(103, 65, 7, 1)'/>} bg='rgba(103, 65, 7, 0.1)'/>}/>
                   </div>
                </div>
+              
              </div>
+             <div className={e.showMoreButton}><Button172 text={<Text15700 text='Show more'/>} bg='rgba(61, 61, 61, 0.06)'/></div>
            </div>
-           {/* <Footer /> */}
+           <Footer />
          </div>
         </div>
     )
