@@ -4,6 +4,7 @@ const Text15400С = (props) => {
     const textStyle = {
         color: props.color,
         textDecoration: props.underline ? 'underline' : 'none',
+        textAlign: props.align
         };
     return (
         <p className={t.text15400С} style={textStyle}>

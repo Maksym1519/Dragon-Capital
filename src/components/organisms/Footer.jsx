@@ -15,7 +15,7 @@ const Footer = (props) => {
               {props.text}
              </div>
              <div className={f.footer__logoWrapper}>
-               <img src={Logo} alt="logo" />
+               {/* <img src={Logo} alt="logo" /> */}
              </div>
            </div>
         </div>
