@@ -2,7 +2,8 @@ import e from './event.module.scss';
 
 const Event = (props) => {
     const styled = {
-        alignItems: props.align
+        alignItems: props.align,
+        rowGap: props.gap
     }
     return (
         <div className={e.event__wrapper} style={styled}>

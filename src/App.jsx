@@ -40,6 +40,15 @@ const MyPageLazy = React.lazy(() =>
 const UserPageLazy = React.lazy(() =>
   import("./components/pages/UserPage/UserPage")
 );
+const UserPageBigLazy = React.lazy(() =>
+  import("./components/pages/UserPage/UserPageBig")
+);
+const MyPageBigLazy = React.lazy(() =>
+  import("./components/pages/MyPage/MyPageBig")
+);
+const AddEmployeeLazy = React.lazy(() =>
+  import("./components/pages/AddEmployee/AddEmployee")
+);
 
 import "./fonts.scss";
 import "./style.scss";
@@ -61,6 +70,9 @@ const App = () => {
         <Link to="/Employees">Employees</Link>
         <Link to="/MyPage">MyPage</Link>
         <Link to="/UserPage">UserPage</Link>
+        <Link to="/UserPageBig">UserPageBig</Link>
+        <Link to="/MyPageBig">MyPageBig</Link>
+        <Link to="/AddEmployee">AddEmployee</Link>
       </nav>
       <Routes>
         <Route
@@ -167,6 +179,30 @@ const App = () => {
           element={
             <React.Suspense>
               <UserPageLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/UserPageBig"
+          element={
+            <React.Suspense>
+              <UserPageBigLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/MyPageBig"
+          element={
+            <React.Suspense>
+              <MyPageBigLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/AddEmployee"
+          element={
+            <React.Suspense>
+              <AddEmployeeLazy />
             </React.Suspense>
           }
         ></Route>
