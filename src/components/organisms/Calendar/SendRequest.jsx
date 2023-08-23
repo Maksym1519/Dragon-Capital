@@ -35,6 +35,7 @@ const SendRequest = (props) => {
                 {React.createElement(BigComponents[currentComponent], {
                     components: currentComponent,
                     setPopUpActive: props.setPopUpActive,
+                    setRequestPopUpActive: props.setRequestPopUpActive,
                 })}
             </div>
         </div>

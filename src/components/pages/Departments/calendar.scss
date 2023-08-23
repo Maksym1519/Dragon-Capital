@@ -5,13 +5,12 @@
 }
 
 .calendar-content {
-	margin: 70px 0 0 0;
+	margin: 70px 0 80px 0;
 	display: flex;
 	flex-direction: row;
 	gap: 60px;
 	width: 100%;
 }
-
 
 .calendar-popup {
 	position: absolute;
@@ -23,7 +22,7 @@
 	&.active {
 		z-index: 1000;
 		visibility: visible;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -32,6 +31,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		overflow: hidden !important;
 	}
 
 	&__box {
@@ -45,7 +45,7 @@
 		background: #fff;
 		border: 1px solid #f4f4f4;
 		filter: drop-shadow(0px 24px 54px rgba(0, 0, 0, 0.18));
-        padding: 0 60px 60px 60px;
+		padding: 0 60px 60px 60px;
 	}
 
 	&__cross {
@@ -64,11 +64,79 @@
 		line-height: 100%; /* 28px */
 	}
 
-    &__text{
-        margin: 35px 0 0 0;
-        color: var(--unnamed, #3D3D3D);
-        font-family: Plumb-400;
-        font-size: 17px;
-        line-height: 150%; /* 25.5px */
-    }
+	&__text {
+		margin: 35px 0 0 0;
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 17px;
+		line-height: 150%; /* 25.5px */
+	}
+
+	&__undertitle {
+		margin: 11px 0 32px 0;
+		color: var(--unnamed, #3d3d3d);
+		text-align: center;
+		font-family: Plumb-400;
+		font-size: 17px;
+		line-height: 150%; /* 25.5px */
+		max-width: 365px;
+	}
+
+	&__rows {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__row {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+
+	&__date {
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 120%; /* 18px */
+		width: 104px;
+	}
+
+	&__day {
+		width: 223px;
+		height: 40px;
+		background: #f6f6f6;
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+		padding: 11px 0 0 15px;
+		
+	}
+
+	&__pay {
+		width: 154px;
+		height: 40px;
+		background: #f6f6f6;
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+		padding: 8px 0 0 15px;
+	}
+
+	&__button {
+		margin: 38px 0 0 0;
+		width: 199px;
+		height: 46px;
+		flex-shrink: 0;
+		background: var(--1, #277d59);
+		color: var(--unnamed, #fff);
+		text-align: center;
+		font-family: Plumb-700;
+		font-size: 15px;
+		line-height: 120%; /* 18px */
+		
+	}
 }
