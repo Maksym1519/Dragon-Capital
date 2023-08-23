@@ -58,7 +58,7 @@ const SendRequestRequest = (props) => {
 
                 <div className="send-request-request__buttons">
                     <div className="send-request-request__button cancel">Reset all</div>
-                    <div className="send-request-request__button">Отправить запрос</div>
+                    <div className="send-request-request__button" onClick={()=>{props.setRequestPopUpActive(true)}}>Отправить запрос</div>
                 </div>
 
             </div>

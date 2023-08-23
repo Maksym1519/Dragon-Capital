@@ -60,6 +60,7 @@ const App = () => {
         <Link to="/">Home</Link>
         <Link to="/Birthdays">Birthdays</Link>
         <Link to="/Departments">Departments</Link>
+        <Link to="/Calendar">Calendar</Link>
         <Link to="/Starting">Starting</Link>
         <Link to="/Holidays">Holidays</Link>
         <Link to="/HolidaysLasted">HolidaysLasted</Link>
