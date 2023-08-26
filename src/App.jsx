@@ -16,6 +16,12 @@ const StartingLazy = React.lazy(() =>
 const CalendarLazy = React.lazy(() =>
   import("./components/pages/Departments/Calendar.jsx")
 );
+const OrdersLazy = React.lazy(() =>
+  import("./components/pages/Departments/Orders.jsx")
+);
+const FloorPlanLazy = React.lazy(() =>
+  import("./components/pages/Departments/FloorPlan.jsx")
+);
 const HolidaysLazy = React.lazy(() =>
   import("./components/pages/Holidays/Holidays")
 );
@@ -61,6 +67,8 @@ const App = () => {
         <Link to="/Birthdays">Birthdays</Link>
         <Link to="/Departments">Departments</Link>
         <Link to="/Calendar">Calendar</Link>
+        <Link to="/Orders">Orders</Link>
+        <Link to="/FloorPlan">FloorPlan</Link>
         <Link to="/Starting">Starting</Link>
         <Link to="/Holidays">Holidays</Link>
         <Link to="/HolidaysLasted">HolidaysLasted</Link>
@@ -115,6 +123,22 @@ const App = () => {
           element={
             <React.Suspense>
               <CalendarLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/Orders"
+          element={
+            <React.Suspense>
+              <OrdersLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/FloorPlan"
+          element={
+            <React.Suspense>
+              <FloorPlanLazy />
             </React.Suspense>
           }
         ></Route>

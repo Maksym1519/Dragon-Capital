@@ -30,13 +30,13 @@
 	}
 
 	&__accont-avatar {
-		margin: 0px 0 0 -0.5px;
+		margin: -0.5px 0 0 -0.5px;
 		width: 50px;
 		height: 50px;
 	}
 
 	&__acconut-texts {
-		margin: 5px 0 0 0;
+		margin:3px 0 0 0;
 		display: flex;
 		flex-direction: column;
 	}
@@ -50,6 +50,7 @@
 	}
 
 	&__accont-partner {
+		margin: 2.5px 0 0 0;
 		color: var(--unnamed, #3d3d3d);
 		font-family: Plumb-400;
 		font-size: 13px;
@@ -58,7 +59,7 @@
 	}
 
 	&__description {
-		margin: 16px 0 0 -1px;
+		margin: 17px 0 0 -1px;
 		color: var(--unnamed, #3d3d3d);
 		font-family: Plumb-400;
 		font-size: 13px;
