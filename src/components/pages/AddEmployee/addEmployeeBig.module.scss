@@ -32,7 +32,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 28px;
+    row-gap: 30px;
 }
 .personalInformation {
     width: 100%;
@@ -55,12 +55,15 @@
         border-bottom: 1px solid #EFEFEF;
         & .body {
             display: flex;
+            flex-direction: column;
             align-items: center;
             column-gap: 20px;
             & .img__infoWrapper {
                 display: flex;
                 flex-direction: column;
-                row-gap: 22px;
+                align-items: center;
+                text-align: center;
+                row-gap: 21px;
             }
         }
         }
@@ -172,7 +175,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 29px;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 }
 .settings__item {
     width: 100%;
