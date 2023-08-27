@@ -49,6 +49,15 @@ const MyPageBigLazy = React.lazy(() =>
 const AddEmployeeLazy = React.lazy(() =>
   import("./components/pages/AddEmployee/AddEmployee")
 );
+const AddEmployeeBigLazy = React.lazy(() =>
+  import("./components/pages/AddEmployee/AddEmployeeBig")
+);
+const HistoryChangesLazy = React.lazy(() =>
+  import("./components/pages/HistoryChanges/HistoryChanges")
+);
+const ReviewMainLazy = React.lazy(() =>
+  import("./components/pages/ReviewMain/ReviewMain")
+);
 
 import "./fonts.scss";
 import "./style.scss";
@@ -73,6 +82,9 @@ const App = () => {
         <Link to="/UserPageBig">UserPageBig</Link>
         <Link to="/MyPageBig">MyPageBig</Link>
         <Link to="/AddEmployee">AddEmployee</Link>
+        <Link to="/AddEmployeeBig">AddEmployeeBig</Link>
+        <Link to="/HistoryChanges">HistoryChanges</Link>
+        <Link to="/ReviewMain">ReviewMain</Link>
       </nav>
       <Routes>
         <Route
@@ -203,6 +215,30 @@ const App = () => {
           element={
             <React.Suspense>
               <AddEmployeeLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/AddEmployeeBig"
+          element={
+            <React.Suspense>
+              <AddEmployeeBigLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/HistoryChanges"
+          element={
+            <React.Suspense>
+              <HistoryChangesLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewMain"
+          element={
+            <React.Suspense>
+              <ReviewMainLazy />
             </React.Suspense>
           }
         ></Route>

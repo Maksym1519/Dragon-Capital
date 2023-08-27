@@ -3,5 +3,11 @@
     height: auto;
     display: flex;
     align-items: center;
-    column-gap: 9px;
+    //column-gap: 9px;
+    & .img {
+        margin-right: 8px;
+    }
+    & .imgMargin {
+        margin-right: 10px;
+    }
 }

@@ -1,6 +1,6 @@
-import a from "./addEmployee.module.scss";
+import ab from "./addEmployeeBig.module.scss";
 import Header from "../../organisms/Header";
-import Footer from '../../organisms/Footer';
+import Footer from "../../organisms/Footer";
 import Radio from "../../atoms/Radio";
 import Text60700 from "../../atoms/Text60700";
 import Text15400С from "../../atoms/Text15400С";
@@ -8,7 +8,7 @@ import Text21700 from "../../atoms/Text21700";
 import Text28700 from "../../atoms/Text28700";
 import Text17700 from "../../atoms/Text17700";
 import ImgTextTemplate from "../../templates/ImgTextTemplate";
-import Ava from "../../../images/avatar-addEmployee.webp";
+import Ava from "../../../images/avatar-bigPhoto.webp";
 import Ava1 from "../../../images/ava1-sub.webp";
 import Ava2 from "../../../images/ava2-sub.webp";
 import Ava3 from "../../../images/ava3-sub.webp";
@@ -249,46 +249,47 @@ const AddEmployee = () => {
   };
 
   return (
-    <div className={a.wrapper}>
+    <div className={ab.wrapper}>
       <Header />
-      <div className={a.background}>
-        <div className={a.container}>
-          <div className={a.title}>
+      <div className={ab.background}>
+        <div className={ab.container}>
+          <div className={ab.title}>
             <Text60700 text="Редактировать сотрудника" />
           </div>
-          <div className={a.body}>
-            <div className={a.personalInformation__wrapper}>
+          <div className={ab.body}>
+            <div className={ab.personalInformation__wrapper}>
               <Text28700 text="Персональная информация" />
-              <div className={a.personalInformation}>
-                <div className={a.contacts}>
-                  <div className={a.contacts__avaWrapper}>
+              <div className={ab.personalInformation}>
+                <div className={ab.contacts}>
+                  <div className={ab.contacts__avaWrapper}>
                     <Text21700 text="Изображение" />
-                    <div className={a.body}>
+                    <div className={ab.body}>
                       <img src={Ava} alt="ava" />
-                      <div className={a.img__infoWrapper}>
-                        <Text15400С
-                          text="Загрузите квадратное фото в формате png, jpeg,размером не более 400 кб"
-                          color="rgba(61, 61, 61, 0.4)"
-                        />
-                        <ImgTextTemplate
+                      <div className={ab.img__infoWrapper}>
+                      <ImgTextTemplate
                           image={ChooseIcon}
                           text={
                             <Text15400С
                               text="Выбрать другое фото"
                               color="#277D59"
                               underline={true}
-                            />
+                             />
                           }
+                          margin='170px'
                         />
-                      </div>
+                        <Text15400С
+                          text="Загрузите квадратное фото в формате png, jpeg,размером не более 400 кб"
+                          color="rgba(61, 61, 61, 0.4)"
+                        />
+                        </div>
                     </div>
                   </div>
-                  <div className={a.contactsInformation}>
-                    <h3 className={a.title}>
+                  <div className={ab.contactsInformation}>
+                    <h3 className={ab.title}>
                       <Text21700 text="Контактная информация" />
                     </h3>
-                    <form action="#" className={a.inputs__form}>
-                      <div className={a.input__wrapper}>
+                    <form action="#" className={ab.inputs__form}>
+                      <div className={ab.input__wrapper}>
                         <label htmlFor="email">
                           <Text15400С
                             text="Email"
@@ -297,13 +298,13 @@ const AddEmployee = () => {
                         </label>
                         <input
                           type="email"
-                          className={a.contactsInformation__input}
+                          className={ab.contactsInformation__input}
                           id="email"
                           name="contact"
-                          placeholder="a.shevchenko@dragon.com.ua"
+                          placeholder="ab.shevchenko@dragon.com.ua"
                         />
                       </div>
-                      <div className={a.input__wrapper}>
+                      <div className={ab.input__wrapper}>
                         <label htmlFor="number">
                           <Text15400С
                             text="Телефон мобильный"
@@ -312,13 +313,13 @@ const AddEmployee = () => {
                         </label>
                         <input
                           type="number"
-                          className={a.contactsInformation__input}
+                          className={ab.contactsInformation__input}
                           id="email"
                           name="contact"
                           placeholder="+380951649520"
                         />
                       </div>
-                      <div className={a.input__wrapper}>
+                      <div className={ab.input__wrapper}>
                         <label htmlFor="number">
                           <Text15400С
                             text="Телефон дополнительный"
@@ -327,13 +328,13 @@ const AddEmployee = () => {
                         </label>
                         <input
                           type="email"
-                          className={a.contactsInformation__input}
+                          className={ab.contactsInformation__input}
                           id="email"
                           name="contact"
                           placeholder="+380951649520"
                         />
                       </div>
-                      <div className={a.input__wrapper}>
+                      <div className={ab.input__wrapper}>
                         <label htmlFor="number">
                           <Text15400С
                             text="Внутренний номер"
@@ -342,7 +343,7 @@ const AddEmployee = () => {
                         </label>
                         <input
                           type="email"
-                          className={a.contactsInformation__input}
+                          className={ab.contactsInformation__input}
                           id="email"
                           name="contact"
                           placeholder="421845"
@@ -351,24 +352,24 @@ const AddEmployee = () => {
                     </form>
                   </div>
                 </div>
-                <div className={a.personal}>
-                  <h3 className={a.title}>
+                <div className={ab.personal}>
+                  <h3 className={ab.title}>
                     <Text21700 text="Личные данные" />
                   </h3>
-                  <form action="#" className={a.inputs__form}>
-                    <div className={a.input__wrapper}>
+                  <form action="#" className={ab.inputs__form}>
+                    <div className={ab.input__wrapper}>
                       <label htmlFor="number">
                         <Text15400С text="Имя" color="rgba(61, 61, 61, 0.4)" />
                       </label>
                       <input
                         type="email"
-                        className={a.contactsInformation__input}
+                        className={ab.contactsInformation__input}
                         id="email"
                         name="contact"
                         placeholder="Александр"
                       />
                     </div>
-                    <div className={a.input__wrapper}>
+                    <div className={ab.input__wrapper}>
                       <label htmlFor="number">
                         <Text15400С
                           text="Имя (англ)"
@@ -377,13 +378,13 @@ const AddEmployee = () => {
                       </label>
                       <input
                         type="email"
-                        className={a.contactsInformation__input}
+                        className={ab.contactsInformation__input}
                         id="email"
                         name="contact"
                         placeholder="Alexander"
                       />
                     </div>
-                    <div className={a.input__wrapper}>
+                    <div className={ab.input__wrapper}>
                       <label htmlFor="number">
                         <Text15400С
                           text="Фамилия"
@@ -392,13 +393,13 @@ const AddEmployee = () => {
                       </label>
                       <input
                         type="email"
-                        className={a.contactsInformation__input}
+                        className={ab.contactsInformation__input}
                         id="email"
                         name="contact"
                         placeholder="Шевченко"
                       />
                     </div>
-                    <div className={a.input__wrapper}>
+                    <div className={ab.input__wrapper}>
                       <label htmlFor="number">
                         <Text15400С
                           text="Фамилия (англ)"
@@ -407,13 +408,13 @@ const AddEmployee = () => {
                       </label>
                       <input
                         type="email"
-                        className={a.contactsInformation__input}
+                        className={ab.contactsInformation__input}
                         id="email"
                         name="contact"
                         placeholder="Shevchenko"
                       />
                     </div>
-                    <div className={a.input__wrapper}>
+                    <div className={ab.input__wrapper}>
                       <label htmlFor="number">
                         <Text15400С
                           text="Должность"
@@ -422,13 +423,13 @@ const AddEmployee = () => {
                       </label>
                       <input
                         type="email"
-                        className={a.contactsInformation__input}
+                        className={ab.contactsInformation__input}
                         id="email"
                         name="contact"
                         placeholder="Директор по маркетингу"
                       />
                     </div>
-                    <div className={a.input__wrapper}>
+                    <div className={ab.input__wrapper}>
                       <label htmlFor="number">
                         <Text15400С
                           text="Должность (англ)"
@@ -437,13 +438,13 @@ const AddEmployee = () => {
                       </label>
                       <input
                         type="email"
-                        className={a.contactsInformation__input}
+                        className={ab.contactsInformation__input}
                         id="email"
                         name="contact"
                         placeholder="Marketing director"
                       />
                     </div>
-                    <div className={a.input__wrapper}>
+                    <div className={ab.input__wrapper}>
                       <label htmlFor="number">
                         <Text15400С
                           text="Номер пропуска"
@@ -452,13 +453,13 @@ const AddEmployee = () => {
                       </label>
                       <input
                         type="number"
-                        className={a.contactsInformation__input}
+                        className={ab.contactsInformation__input}
                         id="email"
                         name="contact"
                         placeholder="457"
                       />
                     </div>
-                    <div className={a.input__wrapper}>
+                    <div className={ab.input__wrapper}>
                       <label htmlFor="number">
                         <Text15400С
                           text="День рождения"
@@ -467,32 +468,32 @@ const AddEmployee = () => {
                       </label>
                       <input
                         type="number"
-                        className={a.contactsInformation__input}
+                        className={ab.contactsInformation__input}
                         id="email"
                         name="contact"
                         placeholder="12.01.1989"
                       />
                     </div>
-                    <div className={a.double__input}>
-                      <div className={a.double__input__item}>
+                    <div className={ab.double__input}>
+                      <div className={ab.double__input__item}>
                         <label htmlFor="number">
                           <Text15400С
                             text="Номер страховки"
                             color="rgba(61, 61, 61, 0.4)"
                           />
                         </label>
-                        <div className={a.input__insurence}>
+                        <div className={ab.input__insurence}>
                           <Text15400С text="568952367" />
                         </div>
                       </div>
-                      <div className={a.double__input__item}>
+                      <div className={ab.double__input__item}>
                         <label htmlFor="number">
                           <Text15400С
                             text="Действительна до"
                             color="rgba(61, 61, 61, 0.4)"
                           />
                         </label>
-                        <div className={a.input__insurence}>
+                        <div className={ab.input__insurence}>
                           <Text15400С text="05.11.2019" />
                           <img src={Calendar} />
                         </div>
@@ -502,31 +503,31 @@ const AddEmployee = () => {
                 </div>
               </div>
             </div>
-            <div className={a.settings__wrapper}>
+            <div className={ab.settings__wrapper}>
               <Text28700 text="Настройки" />
-              <div className={a.settings}>
-                <div className={a.settings__settings}>
-                  <div className={a.row__option}>
+              <div className={ab.settings}>
+                <div className={ab.settings__settings}>
+                  <div className={ab.row__option}>
                     <ImgTextTemplate
                       img={<Radio />}
                       text={<Text15400С text="Сделать пользователя активным" />}
                     />
                   </div>
-                  <div className={a.settings__items__wrapper}>
+                  <div className={ab.settings__items__wrapper}>
                     {/* item1----------------------------------------------- */}
-                    <div className={a.settings__item}>
+                    <div className={ab.settings__item}>
                       <Text15400С text="Язык по умолчанию" />
-                      <div className={a.input__accordion}>
+                      <div className={ab.input__accordion}>
                         <Text15400С text="Русский" />
                         <img
                           src={ArrowDown}
                           alt="arrow"
                           onClick={toggleMenu}
-                          className={`${isClicked ? a.rotate : ""}`}
+                          className={`${isClicked ? ab.rotate : ""}`}
                         />
                       </div>
                       {isClicked && (
-                        <div className={a.languages}>
+                        <div className={ab.languages}>
                           <Text15400С text="Ukrainian" />
                           <Text15400С text="English" />
                           <Text15400С text="German" />
@@ -534,19 +535,19 @@ const AddEmployee = () => {
                       )}
                     </div>
                     {/* item2----------------------------------------------- */}
-                    <div className={a.settings__item}>
+                    <div className={ab.settings__item}>
                       <Text15400С text="Avada-Media" />
-                      <div className={a.input__accordion}>
+                      <div className={ab.input__accordion}>
                         <Text15400С text="Cluster" />
                         <img
                           src={ArrowDown}
                           alt="arrow"
                           onClick={toggleMenu2}
-                          className={`${isClicked2 ? a.rotate : ""}`}
+                          className={`${isClicked2 ? ab.rotate : ""}`}
                         />
                       </div>
                       {isClicked2 && (
-                        <div className={a.languages}>
+                        <div className={ab.languages}>
                           <Text15400С text="IT" />
                           <Text15400С text="Managment" />
                           <Text15400С text="HR" />
@@ -554,19 +555,19 @@ const AddEmployee = () => {
                       )}
                     </div>
                     {/* item3----------------------------------------------- */}
-                    <div className={a.settings__item}>
+                    <div className={ab.settings__item}>
                       <Text15400С text="Департамент" />
-                      <div className={a.input__accordion}>
+                      <div className={ab.input__accordion}>
                         <Text15400С text="Русский" />
                         <img
                           src={ArrowDown}
                           alt="arrow"
                           onClick={toggleMenu3}
-                          className={`${isClicked3 ? a.rotate : ""}`}
+                          className={`${isClicked3 ? ab.rotate : ""}`}
                         />
                       </div>
                       {isClicked3 && (
-                        <div className={a.languages}>
+                        <div className={ab.languages}>
                           <Text15400С text="Technical" />
                           <Text15400С text="Managment" />
                           <Text15400С text="HR" />
@@ -574,14 +575,14 @@ const AddEmployee = () => {
                       )}
                     </div>
                     {/* item4----------------------------------------------- */}
-                    <div className={a.settings__item}>
+                    <div className={ab.settings__item}>
                       <Text15400С text="Дата найма" />
-                      <div className={a.input__accordion}>
+                      <div className={ab.input__accordion}>
                         <Text15400С text="Русский" />
                         <img src={Calendar} alt="arrow" onClick={toggleMenu4} />
                       </div>
                       {isClicked4 && (
-                        <div className={a.languages}>
+                        <div className={ab.languages}>
                           <Text15400С text="Ukrainian" />
                           <Text15400С text="English" />
                           <Text15400С text="German" />
@@ -590,8 +591,8 @@ const AddEmployee = () => {
                     </div>
                     {/* item----------------------------------------------- */}
                   </div>
-                  <div className={a.row__option__wrapper}>
-                    <div className={a.row__option}>
+                  <div className={ab.row__option__wrapper}>
+                    <div className={ab.row__option}>
                       <ImgTextTemplate
                         img={<Radio />}
                         text={
@@ -599,7 +600,7 @@ const AddEmployee = () => {
                         }
                       />
                     </div>
-                    <div className={a.padding}>
+                    <div className={ab.padding}>
                       <Text15400С
                         text="(При первом посещении будет предложено ознакомиться с правилами работы)"
                         color="rgba(61, 61, 61, 0.4)"
@@ -607,27 +608,27 @@ const AddEmployee = () => {
                     </div>
                   </div>
                 </div>
-                <div className={a.settings__filters}>
-                  <div className={a.row__option}>
+                <div className={ab.settings__filters}>
+                  <div className={ab.row__option}>
                     <ImgTextTemplate
                       img={<Radio />}
                       text={<Text15400С text="Отображение в директории" />}
                     />
                   </div>
-                  <div className={a.settings__items__wrapper}>
+                  <div className={ab.settings__items__wrapper}>
                     {/* item1----------------------------------------------- */}
-                    <div className={a.settings__item}>
-                      <div className={a.input__accordion}>
+                    <div className={ab.settings__item}>
+                      <div className={ab.input__accordion}>
                         <Text15400С text="Руководитель" />
                         <img
                           src={ArrowDown}
                           alt="arrow"
                           onClick={toggleMenu5}
-                          className={`${isClicked5 ? a.rotate : ""}`}
+                          className={`${isClicked5 ? ab.rotate : ""}`}
                         />
                       </div>
                       {isClicked5 && (
-                        <div className={a.languages}>
+                        <div className={ab.languages}>
                           <Text15400С text="Заместитель руководителя" />
                           <Text15400С text="Начальник отдела" />
                           <Text15400С text="Главный специалист" />
@@ -635,18 +636,18 @@ const AddEmployee = () => {
                       )}
                     </div>
                     {/* item2----------------------------------------------- */}
-                    <div className={a.settings__item}>
-                      <div className={a.input__accordion}>
+                    <div className={ab.settings__item}>
+                      <div className={ab.input__accordion}>
                         <Text15400С text="Кому приходят запросы из календаря" />
                         <img
                           src={ArrowDown}
                           alt="arrow"
                           onClick={toggleMenu6}
-                          className={`${isClicked6 ? a.rotate : ""}`}
+                          className={`${isClicked6 ? ab.rotate : ""}`}
                         />
                       </div>
                       {isClicked6 && (
-                        <div className={a.languages}>
+                        <div className={ab.languages}>
                           <Text15400С text="Заместитель руководителя" />
                           <Text15400С text="Начальник отдела" />
                           <Text15400С text="Главный специалист" />
@@ -655,46 +656,46 @@ const AddEmployee = () => {
                     </div>
                     {/* item----------------------------------------------- */}
                   </div>
-                  <div className={a.roles__wrapper}>
+                  <div className={ab.roles__wrapper}>
                     <Text21700 text="Роли пользователя" />
-                    <div className={a.options__wrapper}>
-                      <div className={a.row__option}>
+                    <div className={ab.options__wrapper}>
+                      <div className={ab.row__option}>
                         <ImgTextTemplate
                           img={<Radio />}
                           text={<Text15400С text="Bonus Responcible" />}
                         />
                       </div>
-                      <div className={a.row__option}>
+                      <div className={ab.row__option}>
                         <ImgTextTemplate
                           img={<Radio />}
                           text={<Text15400С text="Employee can pass Review" />}
                         />
                       </div>
-                      <div className={a.row__option}>
+                      <div className={ab.row__option}>
                         <ImgTextTemplate
                           img={<Radio />}
                           text={<Text15400С text="IT Security" />}
                         />
                       </div>
-                      <div className={a.row__option}>
+                      <div className={ab.row__option}>
                         <ImgTextTemplate
                           img={<Radio />}
                           text={<Text15400С text="Assistent" />}
                         />
                       </div>
-                      <div className={a.row__option}>
+                      <div className={ab.row__option}>
                         <ImgTextTemplate
                           img={<Radio />}
                           text={<Text15400С text="Administrator" />}
                         />
                       </div>
-                      <div className={a.row__option}>
+                      <div className={ab.row__option}>
                         <ImgTextTemplate
                           img={<Radio />}
                           text={<Text15400С text="Head Administrator" />}
                         />
                       </div>
-                      <div className={a.row__option}>
+                      <div className={ab.row__option}>
                         <ImgTextTemplate
                           img={<Radio />}
                           text={<Text15400С text="HR" />}
@@ -706,13 +707,13 @@ const AddEmployee = () => {
               </div>
             </div>
             {/* //choose----------------------------------------------------------- */}
-            <div className={a.choose}>
-              <h3 className={a.choose__title}>
+            <div className={ab.choose}>
+              <h3 className={ab.choose__title}>
                 <Text28700 text="Выбрать Head" />
               </h3>
-              <div className={a.chooseOptions__wrapper}>
+              <div className={ab.chooseOptions__wrapper}>
                 <div
-                  className={`${a.item} ${isActive ? a.active : a.unActive}`}
+                  className={`${ab.item} ${isActive ? ab.active : ab.unActive}`}
                   onClick={toggleActive}
                 >
                   {isActive && <Text17700 text="For employees" />}
@@ -724,7 +725,7 @@ const AddEmployee = () => {
                   )}
                 </div>
                 <div
-                  className={`${a.item} ${isActive ? a.active : a.unActive}`}
+                  className={`${ab.item} ${isActive ? ab.active : ab.unActive}`}
                   onClick={toggleActive}
                 >
                   {isActive && (
@@ -736,26 +737,26 @@ const AddEmployee = () => {
                   {!isActive && <Text17700 text="For departments" />}
                 </div>
               </div>
-              <div className={a.choose__body}>
-                <div className={a.administration}>
-                  <div className={a.administration_inputWrapper}>
+              <div className={ab.choose__body}>
+                <div className={ab.administration}>
+                  <div className={ab.administration_inputWrapper}>
                     <input
                       type="text"
                       placeholder="Search by name"
-                      className={a.searchInput}
+                      className={ab.searchInput}
                     />
-                    <img src={Search} alt="search" className={a.search} />
+                    <img src={Search} alt="search" className={ab.search} />
                   </div>
-                  <div className={a.row__option}>
+                  <div className={ab.row__option}>
                     <ImgTextTemplate
                       img={<Radio />}
                       text={<Text15400С text="Выбрать всех" />}
                     />
                   </div>
                   {/* //first block dropdown------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu7}
                     >
                       <ImgTextTemplate
@@ -765,13 +766,13 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked7 ? a.rotate : ""}`}
+                        className={`${isClicked7 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked7 && (
-                      <div className={a.administration__menu__inner}>
+                      <div className={ab.administration__menu__inner}>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked1(
                               <ImgTextTemplate
@@ -785,7 +786,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -796,7 +797,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked2(
                               <ImgTextTemplate
@@ -808,7 +809,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -819,7 +820,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked3(
                               <ImgTextTemplate
@@ -831,7 +832,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -842,7 +843,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked4(
                               <ImgTextTemplate
@@ -856,7 +857,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -867,7 +868,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked5(
                               <ImgTextTemplate
@@ -881,7 +882,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -892,7 +893,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked6(
                               <ImgTextTemplate
@@ -904,7 +905,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -918,9 +919,9 @@ const AddEmployee = () => {
                     )}
                   </div>
                   {/* //second block dropdown------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu8}
                     >
                       <ImgTextTemplate
@@ -930,14 +931,14 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked8 ? a.rotate : ""}`}
+                        className={`${isClicked8 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked8 && (
-                      <div className={a.administration__menu__inner}>
-                        <div className={a.inner__menu__item}>
+                      <div className={ab.administration__menu__inner}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -947,9 +948,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -959,9 +960,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -975,9 +976,9 @@ const AddEmployee = () => {
                     )}
                   </div>
                   {/* //third block dropdown------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu9}
                     >
                       <ImgTextTemplate
@@ -987,14 +988,14 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked9 ? a.rotate : ""}`}
+                        className={`${isClicked9 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked9 && (
-                      <div className={a.administration__menu__inner}>
-                        <div className={a.inner__menu__item}>
+                      <div className={ab.administration__menu__inner}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1004,9 +1005,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1016,9 +1017,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1032,9 +1033,9 @@ const AddEmployee = () => {
                     )}
                   </div>
                   {/*4------------------------------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu10}
                     >
                       <ImgTextTemplate
@@ -1044,14 +1045,14 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked10 ? a.rotate : ""}`}
+                        className={`${isClicked10 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked10 && (
-                      <div className={a.administration__menu__inner}>
-                        <div className={a.inner__menu__item}>
+                      <div className={ab.administration__menu__inner}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1061,9 +1062,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1073,9 +1074,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1089,9 +1090,9 @@ const AddEmployee = () => {
                     )}
                   </div>
                   {/*5------------------------------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu11}
                     >
                       <ImgTextTemplate
@@ -1101,14 +1102,14 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked11 ? a.rotate : ""}`}
+                        className={`${isClicked11 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked11 && (
-                      <div className={a.administration__menu__inner}>
-                        <div className={a.inner__menu__item}>
+                      <div className={ab.administration__menu__inner}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1118,9 +1119,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1130,9 +1131,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1147,17 +1148,17 @@ const AddEmployee = () => {
                   </div>
                   {/*6------------------------------------------------------------------ */}
                 </div>
-                <div className={a.choose__delete}>
-                  <div className={a.choose__delete__header}>
+                <div className={ab.choose__delete}>
+                  <div className={ab.choose__delete__header}>
                     Выбрано (Всего{" "}
-                    <span className={a.choose__amount}>
+                    <span className={ab.choose__amount}>
                       {selectedOptions.length}
                     </span>
                     ):
                   </div>
                   {isDelete && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems1}
                       </div>
                       {clickedItems1.length > 0 && (
@@ -1166,8 +1167,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete2 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems2}
                       </div>
                       {clickedItems2.length > 0 && (
@@ -1176,8 +1177,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete3 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems3}
                       </div>
                       {clickedItems3.length > 0 && (
@@ -1186,8 +1187,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete4 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems4}
                       </div>
                       {clickedItems4.length > 0 && (
@@ -1196,8 +1197,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete5 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems5}
                       </div>
                       {clickedItems5.length > 0 && (
@@ -1206,8 +1207,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete6 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems6}
                       </div>
                       {clickedItems6.length > 0 && (
@@ -1219,14 +1220,14 @@ const AddEmployee = () => {
                </div>
             </div>
             {/* //choose2------------------------------------------------------- */}
-            <div className={a.choose}>
-            <div className={a.choose}>
-              <h3 className={a.choose__title}>
+            <div className={ab.choose}>
+            <div className={ab.choose}>
+              <h3 className={ab.choose__title}>
                 <Text28700 text="Выбрать Review Viewer" />
               </h3>
-              <div className={a.chooseOptions__wrapper}>
+              <div className={ab.chooseOptions__wrapper}>
                 <div
-                  className={`${a.item} ${isActive ? a.active : a.unActive}`}
+                  className={`${ab.item} ${isActive ? ab.active : ab.unActive}`}
                   onClick={toggleActive}
                 >
                   {isActive && <Text17700 text="For employees" />}
@@ -1238,7 +1239,7 @@ const AddEmployee = () => {
                   )}
                 </div>
                 <div
-                  className={`${a.item} ${isActive ? a.active : a.unActive}`}
+                  className={`${ab.item} ${isActive ? ab.active : ab.unActive}`}
                   onClick={toggleActive}
                 >
                   {isActive && (
@@ -1250,26 +1251,26 @@ const AddEmployee = () => {
                   {!isActive && <Text17700 text="For departments" />}
                 </div>
               </div>
-              <div className={a.choose__body}>
-                <div className={a.administration}>
-                  <div className={a.administration_inputWrapper}>
+              <div className={ab.choose__body}>
+                <div className={ab.administration}>
+                  <div className={ab.administration_inputWrapper}>
                     <input
                       type="text"
                       placeholder="Search by name"
-                      className={a.searchInput}
+                      className={ab.searchInput}
                     />
-                    <img src={Search} alt="search" className={a.search} />
+                    <img src={Search} alt="search" className={ab.search} />
                   </div>
-                  <div className={a.row__option}>
+                  <div className={ab.row__option}>
                     <ImgTextTemplate
                       img={<Radio />}
                       text={<Text15400С text="Выбрать всех" />}
                     />
                   </div>
                   {/* //first block dropdown------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu12}
                     >
                       <ImgTextTemplate
@@ -1279,13 +1280,13 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked12 ? a.rotate : ""}`}
+                        className={`${isClicked12 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked12 && (
-                      <div className={a.administration__menu__inner}>
+                      <div className={ab.administration__menu__inner}>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked7(
                               <ImgTextTemplate
@@ -1299,7 +1300,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1310,7 +1311,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked8(
                               <ImgTextTemplate
@@ -1322,7 +1323,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1333,7 +1334,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked9(
                               <ImgTextTemplate
@@ -1345,7 +1346,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1356,7 +1357,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked10(
                               <ImgTextTemplate
@@ -1370,7 +1371,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1381,7 +1382,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked11(
                               <ImgTextTemplate
@@ -1395,7 +1396,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1406,7 +1407,7 @@ const AddEmployee = () => {
                           </div>
                         </div>
                         <div
-                          className={a.inner__menu__item}
+                          className={ab.inner__menu__item}
                           onClick={() =>
                             handleItemClicked12(
                               <ImgTextTemplate
@@ -1418,7 +1419,7 @@ const AddEmployee = () => {
                           }
                         >
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1432,9 +1433,9 @@ const AddEmployee = () => {
                     )}
                   </div>
                   {/* //second block dropdown------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu13}
                     >
                       <ImgTextTemplate
@@ -1444,14 +1445,14 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked13 ? a.rotate : ""}`}
+                        className={`${isClicked13 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked13 && (
-                      <div className={a.administration__menu__inner}>
-                        <div className={a.inner__menu__item}>
+                      <div className={ab.administration__menu__inner}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1461,9 +1462,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1473,9 +1474,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1489,9 +1490,9 @@ const AddEmployee = () => {
                     )}
                   </div>
                   {/* //third block dropdown------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu14}
                     >
                       <ImgTextTemplate
@@ -1501,14 +1502,14 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked9 ? a.rotate : ""}`}
+                        className={`${isClicked9 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked14 && (
-                      <div className={a.administration__menu__inner}>
-                        <div className={a.inner__menu__item}>
+                      <div className={ab.administration__menu__inner}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1518,9 +1519,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1530,9 +1531,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1546,9 +1547,9 @@ const AddEmployee = () => {
                     )}
                   </div>
                   {/*4------------------------------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu15}
                     >
                       <ImgTextTemplate
@@ -1558,14 +1559,14 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked15 ? a.rotate : ""}`}
+                        className={`${isClicked15 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked15 && (
-                      <div className={a.administration__menu__inner}>
-                        <div className={a.inner__menu__item}>
+                      <div className={ab.administration__menu__inner}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1575,9 +1576,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1587,9 +1588,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1603,9 +1604,9 @@ const AddEmployee = () => {
                     )}
                   </div>
                   {/*5------------------------------------------------------------------ */}
-                  <div className={a.row__option + " " + a.administration__menu}>
+                  <div className={ab.row__option + " " + ab.administration__menu}>
                     <div
-                      className={a.administration__menu__titleWrapper}
+                      className={ab.administration__menu__titleWrapper}
                       onClick={toggleMenu16}
                     >
                       <ImgTextTemplate
@@ -1615,14 +1616,14 @@ const AddEmployee = () => {
                       <img
                         src={ArrowDown}
                         alt="arrow"
-                        className={`${isClicked11 ? a.rotate : ""}`}
+                        className={`${isClicked11 ? ab.rotate : ""}`}
                       />
                     </div>
                     {isClicked16 && (
-                      <div className={a.administration__menu__inner}>
-                        <div className={a.inner__menu__item}>
+                      <div className={ab.administration__menu__inner}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1632,9 +1633,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1644,9 +1645,9 @@ const AddEmployee = () => {
                             />
                           </div>
                         </div>
-                        <div className={a.inner__menu__item}>
+                        <div className={ab.inner__menu__item}>
                           <div
-                            className={a.row__option}
+                            className={ab.row__option}
                             onClick={handleOptionClick}
                           >
                             <ImgTextTemplate
@@ -1661,17 +1662,17 @@ const AddEmployee = () => {
                   </div>
                   {/*6------------------------------------------------------------------ */}
                 </div>
-                <div className={a.choose__delete}>
-                  <div className={a.choose__delete__header}>
+                <div className={ab.choose__delete}>
+                  <div className={ab.choose__delete__header}>
                     Выбрано (Всего{" "}
-                    <span className={a.choose__amount}>
+                    <span className={ab.choose__amount}>
                       {selectedOptions.length}
                     </span>
                     ):
                   </div>
                   {isDelete && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems1}
                       </div>
                       {clickedItems1.length > 0 && (
@@ -1680,8 +1681,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete2 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems2}
                       </div>
                       {clickedItems2.length > 0 && (
@@ -1690,8 +1691,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete3 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems3}
                       </div>
                       {clickedItems3.length > 0 && (
@@ -1700,8 +1701,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete4 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems4}
                       </div>
                       {clickedItems4.length > 0 && (
@@ -1710,8 +1711,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete5 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems5}
                       </div>
                       {clickedItems5.length > 0 && (
@@ -1720,8 +1721,8 @@ const AddEmployee = () => {
                     </div>
                   )}
                   {isDelete6 && (
-                    <div className={a.delete__item}>
-                      <div className={a.delete__ietm__output}>
+                    <div className={ab.delete__item}>
+                      <div className={ab.delete__ietm__output}>
                         {clickedItems6}
                       </div>
                       {clickedItems6.length > 0 && (

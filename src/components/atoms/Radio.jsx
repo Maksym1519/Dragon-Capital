@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import r from './radio.module.scss';
-import Arrow from '../../images/redDot.svg'
+import Arrow from '../../images/active-option.svg'
 
 const Radio = () => {
     const [isChecked, setIsChecked] = useState(false)
