@@ -64,6 +64,9 @@ const HistoryChangesLazy = React.lazy(() =>
 const ReviewMainLazy = React.lazy(() =>
   import("./components/pages/ReviewMain/ReviewMain")
 );
+const ReviewCreateLazy = React.lazy(() =>
+  import("./components/pages/ReviewCreate/ReviewCreate")
+);
 
 import "./fonts.scss";
 import "./style.scss";
@@ -93,6 +96,7 @@ const App = () => {
         <Link to="/AddEmployeeBig">AddEmployeeBig</Link>
         <Link to="/HistoryChanges">HistoryChanges</Link>
         <Link to="/ReviewMain">ReviewMain</Link>
+        <Link to="/ReviewCreate">ReviewCreate</Link>
       </nav>
       <Routes>
         <Route
@@ -263,6 +267,14 @@ const App = () => {
           element={
             <React.Suspense>
               <ReviewMainLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewCreate"
+          element={
+            <React.Suspense>
+              <ReviewCreateLazy />
             </React.Suspense>
           }
         ></Route>
