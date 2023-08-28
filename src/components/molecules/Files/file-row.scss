@@ -1,0 +1,80 @@
+.file-row {
+	width: 520px;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	background: #fff;
+	box-shadow: 0px 16px 34px 0px rgba(0, 0, 0, 0.04);
+	&__img {
+		margin: 15px 0 0 15px;
+		width: 50px;
+		height: 50px;
+	}
+
+	&__texts-container {
+		width: 100%;
+        max-width: 299px;
+		margin: 18px 0 0 15px;
+		display: flex;
+		flex-direction: column;
+		gap: 0px;
+	}
+
+	&__texts {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	&__date {
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 13px;
+		line-height: 150%; /* 19.5px */
+	}
+
+	&__cluster {
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 13px;
+		line-height: 150%; /* 19.5px */
+	}
+
+	&__file-name {
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-700;
+		font-size: 17px;
+		line-height: 150%; /* 25.5px */
+	}
+
+	&__file-size {
+		margin: 31px 8px 0 0;
+		color: var(--unnamed, #3d3d3d);
+		text-align: right;
+		font-family: Plumb-400;
+		font-size: 13px;
+		line-height: 150%; /* 19.5px */
+		width: 45px !important;
+        display: flex;
+        flex-wrap: nowrap;
+	}
+
+	&__line {
+		opacity: 0.15;
+		background: #3d3d3d;
+		width: 1px;
+		height: 80.006px;
+	}
+
+	&__download-icon {
+		margin: 33px 15px 0 14px;
+		width: 14px;
+		height: 15px;
+	}
+
+	&__red-cross {
+		width: 12px;
+		height: 12px;
+		margin: 34px 15px 0 16px;
+	}
+}
