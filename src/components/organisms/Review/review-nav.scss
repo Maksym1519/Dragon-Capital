@@ -1,0 +1,17 @@
+.review-small-nav {
+	display: flex;
+	flex-direction: row;
+	gap: 51px;
+	&__item {
+		color: rgba(#3d3d3d, 0.3);
+		font-family: Plumb-700;
+		font-size: 18px;
+		line-height: 120%; /* 21.6px */
+		text-decoration-line: underline;
+        cursor: pointer;
+		&.active {
+			color: var(--1, #277d59);
+            text-decoration-line: none;
+		}
+	}
+}
