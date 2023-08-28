@@ -1,0 +1,361 @@
+.teams-controls {
+	margin: 58px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	&__add-button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		gap: 13px;
+		color: var(--unnamed, #fff);
+		font-family: Plumb-700;
+		font-size: 15px;
+		line-height: 120%; /* 18px */
+		width: 209px;
+		height: 46px;
+		background: var(--1, #277d59);
+		padding: 0 10px 0 0;
+	}
+
+	&__plus {
+		width: 14px;
+		height: 14px;
+	}
+
+	&__edit-button {
+		width: 187px;
+		margin: 22px -25px 0 0;
+		display: flex;
+		flex-direction: row;
+		gap: 11px;
+		color: var(--1, #277d59);
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 120%; /* 18px */
+		text-decoration-line: underline;
+	}
+
+	&__edit-icon {
+		width: 17px;
+		height: 17px;
+	}
+}
+
+.teams {
+	margin: 74px 0 373px 0;
+	display: flex;
+	flex-direction: row;
+	gap: 66px;
+	&__nav-buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	&__nav-button {
+		width: 218px;
+		height: 31px;
+		color: #fff;
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #5f82ff;
+		border-radius: 20px;
+	}
+
+	&__employees {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
+.edit-team {
+	margin: 83px 0 631px 5px;
+	display: flex;
+	flex-direction: row;
+	gap: 141px;
+	&__general {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__input {
+		margin: 25px 0 0 0;
+		width: 360px;
+		height: 40px;
+		flex-shrink: 0;
+		background: #fff;
+		border: 1px solid #e2e2e2;
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+		padding: 0 0 0 15px;
+	}
+
+	&__color-container {
+		margin: 20px 0 0px 1px;
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		align-items: center;
+	}
+
+	&__color-text {
+		color: #3d3d3d;
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+	}
+
+	&__color-box {
+		margin: 1px 0 0 11px;
+		width: 140px;
+		height: 40px;
+		background: #fff;
+		border: 1px solid #e2e2e2;
+		padding: 10px 0 0 18px;
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+	}
+
+	&__color-input {
+		margin: -3px 0 0 -3px;
+		width: 79px;
+		height: 23px;
+		color: #3d3d3d;
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+	}
+
+	&__color-square {
+		width: 20px;
+		height: 20px;
+		flex-shrink: 0;
+		background: #ffa011;
+	}
+
+	&__check-box {
+		margin: 39px 0 39px 0;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: var(--1, #277d59);
+		width: 199px;
+		height: 46px;
+		flex-shrink: 0;
+		color: var(--unnamed, #fff);
+		text-align: center;
+		font-family: Plumb-700;
+		font-size: 15px;
+		line-height: 120%; /* 18px */
+	}
+
+	&__employees {
+		display: flex;
+		flex-direction: column;
+	}
+	&__list {
+		margin: 30px 0 0 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__row {
+		background: #fff;
+		width: 344px;
+		height: 44px;
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: row;
+
+		padding: 0 15px 0 0;
+	}
+
+	&__avatar {
+		margin: 3px 0 0 0px;
+		width: 30px;
+		height: 30px;
+	}
+
+	&__row-name {
+		margin: 7px 0 0 10px;
+		width: 100%;
+		color: var(--unnamed, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+	}
+
+	&__red-cross {
+		margin: 12px 0 0 0px;
+		width: 12px;
+		height: 12px;
+	}
+
+	&__add-emp-button {
+		margin: 26px 0 0 0;
+		display: flex;
+		flex-direction: row;
+		gap: 9px;
+		color: var(--1, #277d59);
+		font-family: Plumb-700;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+		cursor: pointer;
+	}
+
+	&__user-add-icon {
+		width: 21px;
+		height: 21px;
+	}
+}
+
+.add-employee-popup {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	display: none;
+	&.active {
+		position: fixed;
+		visibility: visible;
+		top: 181px;
+		right: 361px;
+		display: flex;
+		width: 458px;
+		height: auto;
+		flex-direction: column;
+		background: #fff;
+		border: 1px solid #f4f4f4;
+		filter: drop-shadow(0px 24px 54px rgba(0, 0, 0, 0.18));
+		padding: 53px 60px 60px 60px;
+	}
+	&__cross {
+		top: 20px;
+		right: 20px;
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+	}
+
+	&__title {
+		margin: 0px 0 52px 14px;
+		color: var(--unnamed, #3d3d3d);
+		text-align: center;
+		font-family: Plumb-700;
+		font-size: 28px;
+		line-height: 100%; /* 28px */
+		width: 308px;
+	}
+
+	&__choose {
+		margin: 30px 0 0 0px;
+	}
+
+	&__checkbox {
+		margin: 0px 15px 0 0;
+		border: 1px solid #e2e2e2;
+		width: 15px;
+		height: 15px;
+		&.active {
+			.add-employee-popup__check-icon {
+				display: flex;
+			}
+		}
+	}
+
+	&__check-icon {
+		margin: 0px 1px 0 0px;
+		display: none;
+		width: 14px;
+		height: 14px;
+	}
+
+	&__dropdowns {
+		margin: 0 0 0 2px;
+		display: flex;
+		flex-direction: column;
+		gap: 22px;
+	}
+
+	&__row {
+		height: auto;
+		color: #000;
+		font-family: Trebuchet-700;
+		font-size: 14px;
+		display: flex;
+		flex-direction: row;
+		cursor: pointer;
+		&.drop {
+			flex-direction: column;
+		}
+	}
+
+	&__preview {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__avatar {
+		margin: 0px 10px 0 0;
+		width: 30px;
+		height: 30px;
+	}
+
+	&__dropdown-arrow {
+		margin: 2px 0 0 8px;
+		&.active {
+			transform: rotate(180deg);
+		}
+	}
+
+	&__dropdown {
+		height: 0;
+		visibility: hidden;
+		&.active {
+			margin: 21.5px 0 1px 0px;
+			height: auto;
+			visibility: visible;
+			display: flex;
+			flex-direction: column;
+			
+			gap: 7px;
+			&.inner {
+				margin: 16px 0 0 30px;
+			}
+		}
+
+		cursor: default;
+	}
+
+	&__link {
+		cursor: pointer;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	&__button {
+		margin: 40px 0 0 69px;
+		background: var(--1, #277d59);
+		width: 199px;
+		height: 46px;
+		color: var(--unnamed, #fff);
+		font-family: Plumb-700;
+		font-size: 15px;
+		line-height: 120%; /* 18px */
+	}
+}
