@@ -22,6 +22,27 @@ const OrdersLazy = React.lazy(() =>
 const FloorPlanLazy = React.lazy(() =>
   import("./components/pages/Departments/FloorPlan.jsx")
 );
+const UserTimeLazy = React.lazy(() =>
+  import("./components/pages/Departments/UserTime.jsx")
+);
+const TeamsLazy = React.lazy(() =>
+  import("./components/pages/Departments/Teams.jsx")
+);
+const UsefulInfoLazy = React.lazy(() =>
+  import("./components/pages/Departments/UsefulInfo.jsx")
+);
+const ReviewEmployeeMainLazy = React.lazy(() =>
+  import("./components/pages/ReviewEmployee/ReviewEmployeeMain.jsx")
+);
+const ReviewEmployeeViewLazy = React.lazy(() =>
+  import("./components/pages/ReviewEmployee/ReviewEmployeeView.jsx")
+);
+const ReviewEmployeeArchiveLazy = React.lazy(() =>
+  import("./components/pages/ReviewEmployee/ReviewEmployeeArchive.jsx")
+);
+const EditTeamLazy = React.lazy(() =>
+  import("./components/pages/Departments/EditTeam.jsx")
+);
 const HolidaysLazy = React.lazy(() =>
   import("./components/pages/Holidays/Holidays")
 );
@@ -90,6 +111,13 @@ const App = () => {
         <Link to="/Calendar">Calendar</Link>
         <Link to="/Orders">Orders</Link>
         <Link to="/FloorPlan">FloorPlan</Link>
+        <Link to="/UserTime">UserTime</Link>
+        <Link to="/Teams">Teams</Link>
+        <Link to="/UsefulInfo">UsefulInfo</Link>
+        <Link to="/ReviewEmployeeMain">ReviewEmployeeMain</Link>
+        <Link to="/ReviewEmployeeView">ReviewEmployeeView</Link>
+        <Link to="/ReviewEmployeeArchive">ReviewEmployeeArchive</Link>
+        <Link to="/EditTeam">EditTeam</Link>
         <Link to="/Starting">Starting</Link>
         <Link to="/Holidays">Holidays</Link>
         <Link to="/HolidaysLasted">HolidaysLasted</Link>
@@ -167,6 +195,62 @@ const App = () => {
           element={
             <React.Suspense>
               <FloorPlanLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/UserTime"
+          element={
+            <React.Suspense>
+              <UserTimeLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/Teams"
+          element={
+            <React.Suspense>
+              <TeamsLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/EditTeam"
+          element={
+            <React.Suspense>
+              <EditTeamLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/UsefulInfo"
+          element={
+            <React.Suspense>
+              <UsefulInfoLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewEmployeeMain"
+          element={
+            <React.Suspense>
+              <ReviewEmployeeMainLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewEmployeeView"
+          element={
+            <React.Suspense>
+              <ReviewEmployeeViewLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewEmployeeArchive"
+          element={
+            <React.Suspense>
+              <ReviewEmployeeArchiveLazy />
             </React.Suspense>
           }
         ></Route>
