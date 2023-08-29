@@ -1,0 +1,107 @@
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //overflow: hidden;
+    position: relative;
+    & .background {
+      width: 100%;
+      height: 100%;
+      background: #fafafa;
+    }
+    & .container {
+      width: 100%;
+      max-width: 1398px;
+      padding-left: 120px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 22px;
+      position: relative;
+      z-index: 2;
+      }
+    & .back__wrapper {
+        margin-bottom: 39px;
+    }
+    & .title__wrapper {
+      width: 100%;
+      margin-bottom: 40px;
+       }
+  }
+  .addArchiv__body {
+    width: 100%;
+    background: #fff;
+    padding: 39px 0 75px 59px;
+    margin-bottom: 139px;
+    & .items__wrapper {
+        max-width: 560px;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  .accordions__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 52px;
+  }
+  .accordion__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    & .input__wrapper {
+        width: 240px;
+        height: 40px;
+        border: 1px solid #E2E2E2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+  }
+  .accordion__itemSearch {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-bottom: 31px;
+    & .input__wrapper {
+        width: 338px;
+        height: 40px;
+        border: 1px solid #E2E2E2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        position: relative;
+    }
+  }
+  .output__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 306px;
+    & .item {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #EFEFEF;
+        & .actions {
+            display: flex;
+            align-items: center;
+            column-gap: 37px;
+            white-space: nowrap;
+            & .text__wrapper {
+                display: flex;
+                flex-direction: column;
+                column-gap: 4px;
+                align-items: flex-end;
+            }
+        }
+    }
+  }
+  

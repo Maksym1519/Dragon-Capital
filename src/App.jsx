@@ -67,6 +67,15 @@ const ReviewMainLazy = React.lazy(() =>
 const ReviewCreateLazy = React.lazy(() =>
   import("./components/pages/ReviewCreate/ReviewCreate")
 );
+const ReviewAdminLazy = React.lazy(() =>
+  import("./components/pages/ReviewAdmin/ReviewAdmin")
+);
+const ReviewArchivLazy = React.lazy(() =>
+  import("./components/pages/ReviewArchiv/ReviewArchiv")
+);
+const ReviewAddArchivLazy = React.lazy(() =>
+  import("./components/pages/ReviewArchiv/ReviewAddArchiv")
+);
 
 import "./fonts.scss";
 import "./style.scss";
@@ -97,6 +106,9 @@ const App = () => {
         <Link to="/HistoryChanges">HistoryChanges</Link>
         <Link to="/ReviewMain">ReviewMain</Link>
         <Link to="/ReviewCreate">ReviewCreate</Link>
+        <Link to="/ReviewAdmin">ReviewAdmin</Link>
+        <Link to="/ReviewArchiv">ReviewArchiv</Link>
+        <Link to="/ReviewAddArchiv">ReviewAddArchiv</Link>
       </nav>
       <Routes>
         <Route
@@ -275,6 +287,30 @@ const App = () => {
           element={
             <React.Suspense>
               <ReviewCreateLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewAdmin"
+          element={
+            <React.Suspense>
+              <ReviewAdminLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewArchiv"
+          element={
+            <React.Suspense>
+              <ReviewArchivLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewAddArchiv"
+          element={
+            <React.Suspense>
+              <ReviewAddArchivLazy />
             </React.Suspense>
           }
         ></Route>
