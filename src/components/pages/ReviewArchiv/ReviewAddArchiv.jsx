@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Header from "../../organisms/Header";
 import Footer from "../../organisms/Footer";
 import ImgTextTemplate from "../../templates/ImgTextTemplate";
-import SortingItem from "../../molecules/ReviewCreate/SortingItem";
 import Button205 from "../../atoms/Buttons/Button20556";
 import Text15400С from "../../atoms/Text15400С";
 import Text60700 from "../../atoms/Text60700";
@@ -16,7 +15,6 @@ import Search from '../../../images/search-icon.svg';
 import Ava1 from "../../../images/ava1-sub.webp";
 import Ava2 from "../../../images/ava2-sub.webp";
 import Ava3 from "../../../images/ava3-sub.webp";
-import Ava4 from "../../../images/ava-girl-30.svg";
 import Close from '../../../images/close-red.svg'
 
 const ReviewAddArchiv = () => {
