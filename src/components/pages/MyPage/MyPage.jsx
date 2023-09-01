@@ -37,7 +37,7 @@ const MyPage = () => {
        <div>
         <Header />
      
-        <div className={`${m.myPage__bg} ${isZoom ? m.darkOverlay : ""}`}>
+       
          
        
             <div className={m.myPage__container}>
@@ -341,6 +341,7 @@ const MyPage = () => {
               </div>
             </div>
             <Footer />
+            <div className={`${m.myPage__bg} ${isZoom ? m.darkOverlay : ""}`}>
    </div>
           <img src={Dragon} alt="dragon" className={m.dragon__image} />
           {isZoom && <PhotoZoom close={closeZoom} />}
