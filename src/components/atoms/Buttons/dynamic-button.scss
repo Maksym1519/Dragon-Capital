@@ -1,0 +1,26 @@
+
+
+.green-dynamic-button {
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--unnamed, #fff);
+	font-family: Plumb-700;
+	font-size: 15px;
+	line-height: 120%; /* 18px */
+	background: var(--1, #277D59);
+	cursor: pointer;
+}
+.grey-dynamic-button {
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--unnamed, #3D3D3D);
+	font-family: Plumb-700;
+	font-size: 15px;
+	line-height: 120%; /* 18px */
+	background: rgba(#3D3D3D, 0.06);
+	cursor: pointer;
+}
