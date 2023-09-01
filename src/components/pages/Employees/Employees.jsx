@@ -1,4 +1,5 @@
 import e from './employees.module.scss';
+import { Link } from 'react-router-dom';
 import Header from '../../organisms/Header';
 import Footer from '../../organisms/Footer';
 import Text60700 from '../../atoms/Text60700';
@@ -32,9 +33,11 @@ const Employees = () => {
            <div className={e.container}>
              <div className={e.title__wrapper}>
                 <h2 className={e.title}><Text60700 text='Сотрудники'/></h2>
+               <Link to='/FloorPlan'>
                 <div className={e.title__button}>
                   <Button199 text={<Text15700 text='Рассадка по этажам' color='#fff'/>}/>
                 </div>
+               </Link>
              </div>
              <div className={e.search__wrapper}>
                 <input type="text" className={e.input__search} placeholder='Введите любой поисковый запрос'/>
@@ -65,9 +68,9 @@ const Employees = () => {
                  <h3 className={e.sidebar__filters__title}><Text20700 text='Teams'/></h3>
                  <div className={e.button__wrapper}><ButtonsTeam text={<Text15400С text='Obolon Residences' color='#5F82FF'/>} bg='rgba(95, 130, 255, 0.10)'/></div>
                  <div className={e.button__wrapper}><ButtonsTeam text={<Text15400С text='Green Hills' color='#fff'/>} bg='rgba(254, 152, 0, 1)'/></div>
-                 <div className={e.button__wrapper}><ButtonsTeam text={<Text15400С text='Obolon Residences' color='#5F82FF'/>} bg='rgba(95, 130, 255, 0.10)'/></div>
-                 <div className={e.button__wrapper}><ButtonsTeam text={<Text15400С text='Obolon Residences' color='#5F82FF'/>} bg='rgba(95, 130, 255, 0.10)'/></div>
-                 <div className={e.button__wrapper}><ButtonsTeam text={<Text15400С text='Obolon Residences' color='#5F82FF'/>} bg='rgba(95, 130, 255, 0.10)'/></div>
+                 <div className={e.button__wrapper}><ButtonsTeam text={<Text15400С text='Dilova' color='#674107'/>} bg='rgba(103, 65, 7, 0.10)'/></div>
+                 <div className={e.button__wrapper}><ButtonsTeam text={<Text15400С text='White Lines' color='rgba(94, 36, 169, 1)'/>} bg='rgba(94, 36, 169, 0.10)'/></div>
+                 <div className={e.button__wrapper}><ButtonsTeam text={<Text15400С text='Moe’s Tavern' color='#142A76'/>} bg='rgba(20, 42, 118, 0.10)'/></div>
                  </div>
                </div>
                <div className={e.items__wrapper}>

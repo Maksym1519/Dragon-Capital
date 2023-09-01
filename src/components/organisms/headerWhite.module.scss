@@ -4,3 +4,51 @@
     padding-right: 18px;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
+//popup-----------------------------------------------------
+.review__menu {
+    width: 171px;
+    height: 150px;
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    z-index: 1999;
+    position: absolute;
+    bottom: -170px;
+    left: 0;
+    & .item {
+      color: rgba(61, 61, 61, 1);
+      font-family: "Plumb-400";
+      font-size: 15px;
+      line-height: 150%;
+    }
+  }
+  .reviewMenu__wrapper {
+    position: relative;
+  }
+  .calendar__menu {
+    width: 171px;
+    height: 150px;
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    z-index: 1999;
+    position: absolute;
+    bottom: -170px;
+    left: 0;
+    & .item {
+      color: rgba(61, 61, 61, 1);
+      font-family: "Plumb-400";
+      font-size: 15px;
+      line-height: 150%;
+    }
+  }
+  .reviewMenu__wrapper {
+    position: relative;
+  }
+    

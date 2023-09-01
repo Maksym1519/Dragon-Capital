@@ -385,7 +385,7 @@ const Main = () => {
               </div>
             </div>
           </div>
-          <Footer textColor="rgba(255, 255, 255, 0.8)" />
+          <Footer textColor="rgba(255, 255, 255, 0.8)" color='#fff'/>
         </div>
       </div>
      </div>
