@@ -239,31 +239,27 @@
     & .chooseOptions__wrapper {
         display: flex;
         align-items: center;
+        transform: translateY(1px);
         & .item {
             width: 174px;
             height: 68px;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: rgba(61, 61, 61, 0.3);
+            font-family: 'Plumb-700';
+            font-size: 17px;
+            line-height: 120%; 
         }
-        & .item:hover {
-            background: #fff;
-        }
-        & .item__active {
-            background: #fff;
-            width: 174px;
-            height: 68px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            }
-        & .item__unActive {
+        
+            & .active {
             background: #fafafa;
             width: 174px;
             height: 68px;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: #3D3D3D;
             }
     }
 }

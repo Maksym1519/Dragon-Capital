@@ -247,6 +247,15 @@ const AddEmployee = () => {
   const deleteItem12 = () => {
     setIsDelete12(false);
   };
+  //-----------------------------------------------------------------
+  const [buttonIndex,setButtonIndex] = useState(0);
+  const clickedButton = (index) => {
+    setButtonIndex(index)
+  }
+  const [buttonIndex2,setButtonIndex2] = useState(0);
+  const clickedButton2 = (index) => {
+    setButtonIndex2(index)
+  }
 
   return (
     <div className={a.wrapper}>
@@ -712,28 +721,16 @@ const AddEmployee = () => {
               </h3>
               <div className={a.chooseOptions__wrapper}>
                 <div
-                  className={`${a.item} ${isActive ? a.active : a.unActive}`}
-                  onClick={toggleActive}
+                  className={`${a.item} ${buttonIndex2 === 0 ? a.active : ''}`}
+                  onClick={() => clickedButton2(0)}
                 >
-                  {isActive && <Text17700 text="For employees" />}
-                  {!isActive && (
-                    <Text17700
-                      text="For employees"
-                      color="rgba(61, 61, 61, 0.3)"
-                    />
-                  )}
+                 For employees
                 </div>
                 <div
-                  className={`${a.item} ${isActive ? a.active : a.unActive}`}
-                  onClick={toggleActive}
+                  className={`${a.item} ${buttonIndex2 === 1 ? a.active : ''}`}
+                  onClick={() => clickedButton2(1)}
                 >
-                  {isActive && (
-                    <Text17700
-                      text="For departments"
-                      color="rgba(61, 61, 61, 0.3)"
-                    />
-                  )}
-                  {!isActive && <Text17700 text="For departments" />}
+                 For departments
                 </div>
               </div>
               <div className={a.choose__body}>
@@ -1226,28 +1223,16 @@ const AddEmployee = () => {
               </h3>
               <div className={a.chooseOptions__wrapper}>
                 <div
-                  className={`${a.item} ${isActive ? a.active : a.unActive}`}
-                  onClick={toggleActive}
+                  className={`${a.item} ${buttonIndex === 0 ? a.active : ''}`}
+                  onClick={() => clickedButton(0)}
                 >
-                  {isActive && <Text17700 text="For employees" />}
-                  {!isActive && (
-                    <Text17700
-                      text="For employees"
-                      color="rgba(61, 61, 61, 0.3)"
-                    />
-                  )}
+                  For employees
                 </div>
                 <div
-                  className={`${a.item} ${isActive ? a.active : a.unActive}`}
-                  onClick={toggleActive}
+                  className={`${a.item} ${buttonIndex === 1 ? a.active : ''}`}
+                  onClick={() => clickedButton(1)}
                 >
-                  {isActive && (
-                    <Text17700
-                      text="For departments"
-                      color="rgba(61, 61, 61, 0.3)"
-                    />
-                  )}
-                  {!isActive && <Text17700 text="For departments" />}
+                 For departments
                 </div>
               </div>
               <div className={a.choose__body}>

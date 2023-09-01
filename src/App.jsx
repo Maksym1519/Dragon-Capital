@@ -106,9 +106,22 @@ const ReviewArchivLazy = React.lazy(() =>
 const ReviewAddArchivLazy = React.lazy(() =>
   import("./components/pages/ReviewArchiv/ReviewAddArchiv")
 );
+const ReviewEditLazy = React.lazy(() =>
+  import("./components/pages/ReviewEdit/ReviewEdit")
+);
+const ReviewCreateEmployeeLazy = React.lazy(() =>
+  import("./components/pages/ReviewCreateEmployee/ReviewCreateEmployee")
+);
+const ReviewProfileAdminaLazy = React.lazy(() =>
+  import("./components/pages/ReviewProfileAdmin/ReviewProfileAdmin")
+);
+const ReviewProfileDownloadLazy = React.lazy(() =>
+  import("./components/pages/ReviewProfileAdmin/ReviewProfileDownload")
+);
 
 import "./fonts.scss";
 import "./style.scss";
+import ServicePage from "./components/pages/ServicePage/servicePage";
 
 const App = () => {
   return (
@@ -149,7 +162,12 @@ const App = () => {
         <Link to="/ReviewAdmin">ReviewAdmin</Link>
         <Link to="/ReviewArchiv">ReviewArchiv</Link>
         <Link to="/ReviewAddArchiv">ReviewAddArchiv</Link>
-      </nav>
+        <Link to="/ReviewEdit">ReviewEdit</Link>
+        <Link to="/ReviewCreateEmployee">ReviewCreateEmployee</Link>
+        <Link to="/ReviewProfileAdmin">ReviewProfileAdmin</Link>
+        <Link to="/ReviewProfileDownload">ReviewProfileDownload</Link>
+        <Link to="/ServicePage">ServicePage</Link>
+        </nav>
       <Routes>
         <Route
           path="/"
@@ -426,11 +444,52 @@ const App = () => {
             </React.Suspense>
           }
         ></Route>
+        
         <Route
           path="/ReviewAddArchiv"
           element={
             <React.Suspense>
               <ReviewAddArchivLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewEdit"
+          element={
+            <React.Suspense>
+              <ReviewEditLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewCreateEmployee"
+          element={
+            <React.Suspense>
+              <ReviewCreateEmployeeLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewProfileAdmin"
+          element={
+            <React.Suspense>
+              <ReviewProfileAdminaLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ReviewProfileDownload"
+          element={
+            <React.Suspense>
+              <ReviewProfileDownloadLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ServicePage"
+          element={
+            <React.Suspense>
+              <ServicePage />
             </React.Suspense>
           }
         ></Route>
