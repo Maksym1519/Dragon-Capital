@@ -9,15 +9,19 @@ import PageTitle from "../../atoms/Headings/PageTitle";
 
 import SearchInput from "../../atoms/Inputs/SearchInput";
 
-import ServicesEmployeeComponent from "../../organisms/ServicesComponents/ServicesEmployeesComponent";
 import serviceFakeTab3 from "../../organisms/ServicesComponents/SupportFakeTab3";
 
 import ServicesEmployeeList from "../../organisms/ServicesComponents/ServicesEmployeeList";
 import ServicesCalendarList from "../../organisms/ServicesComponents/ServicesCalendarList";
+import ServicesChangesList from "../../organisms/ServicesComponents/ServicesChangesList";
 
+import ServicesEmployeeComponent from "../../organisms/ServicesComponents/ServicesEmployeesComponent";
 import ServicesCalendarComponent from "../../organisms/ServicesComponents/ServicesCalendarComponent";
-
-const BigComponents = [serviceFakeTab3, ServicesEmployeeComponent, ServicesCalendarComponent,];
+import ServicesAccountChangesComponent from "../../organisms/ServicesComponents/ServicesAccountChangesComponent";
+import ServicesDataComponent from "../../organisms/ServicesComponents/ServicesDataComponent";
+import Assistants from "../../organisms/ServicePage/Assistants";
+import Roles from "../../organisms/ServicePage/Roles";
+const BigComponents = [Roles, ServicesEmployeeComponent, ServicesCalendarComponent, Assistants, ServicesAccountChangesComponent, ServicesDataComponent];
 
 
 const ServicesPage = () => {
@@ -27,8 +31,8 @@ const ServicesPage = () => {
     const [calendarList, setCalendarList] = useState(false);
     const [changesList, setChangesList] = useState(false);
 
-    const handleSearch=()=>{
-        if (currentComponent === 0 ) {
+    const handleSearch = () => {
+        if (currentComponent === 0) {
             console.log(0);
             setEmployeeList(true);
             setCalendarList(false);
@@ -41,6 +45,10 @@ const ServicesPage = () => {
             setEmployeeList(false);
             setCalendarList(true);
             setChangesList(false);
+        } else if (currentComponent === 4) {
+            setEmployeeList(false);
+            setCalendarList(false);
+            setChangesList(true);
         }
     }
 
@@ -66,13 +74,13 @@ const ServicesPage = () => {
                             <div class={currentComponent === 2 ? "service__nav-button active" : "service__nav-button"} onClick={() => { setCurrentComponent(2) }}>
                                 Calendar
                             </div>
-                            <div class={currentComponent === 3 ? "service__nav-button active" : "service__nav-button"} onClick={() => { setCurrentComponent(0) }}>
+                            <div class={currentComponent === 3 ? "service__nav-button active" : "service__nav-button"} onClick={() => { setCurrentComponent(3) }}>
                                 Assistants
                             </div>
-                            <div class={currentComponent === 4 ? "service__nav-button active" : "service__nav-button"} onClick={() => { setCurrentComponent(1) }}>
+                            <div class={currentComponent === 4 ? "service__nav-button active" : "service__nav-button"} onClick={() => { setCurrentComponent(4) }}>
                                 Account changes
                             </div>
-                            <div class={currentComponent === 5 ? "service__nav-button active" : "service__nav-button"} onClick={() => { setCurrentComponent(2) }}>
+                            <div class={currentComponent === 5 ? "service__nav-button active" : "service__nav-button"} onClick={() => { setCurrentComponent(5) }}>
                                 Data editor
                             </div>
                         </div>
@@ -86,9 +94,10 @@ const ServicesPage = () => {
                     </div>
 
 
-                    
+
                     <ServicesEmployeeList currentComponent={currentComponent} employeeList={employeeList}></ServicesEmployeeList>
                     <ServicesCalendarList currentComponent={currentComponent} calendarList={calendarList}></ServicesCalendarList>
+                    <ServicesChangesList currentComponent={currentComponent} changesList={changesList}></ServicesChangesList>
 
 
                     <Footer />

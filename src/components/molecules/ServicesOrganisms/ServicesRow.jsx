@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import './services-row.scss';
 
 
-
+import SearchInput from "../../atoms/Inputs/SearchInput";
 import WhiteWithGreyBorderDrop from "../Dropdowns/WhiteWithGreyBorderDrop";
 
 import calendarIcon from '../../../images/date-icon.svg';
@@ -22,8 +22,13 @@ const ServicesRow = (props) => {
                 {props.secondDrop && (<WhiteWithGreyBorderDrop background="#FFF" width={303} text1={props.secondText1} text={props.secondText}></WhiteWithGreyBorderDrop>)}
             </div>
             {props.input && (
-                <input type="text" className="services-row__input" placeholder="Write a text"/>
+                <input type="text" className="services-row__input" placeholder="Write a text" />
             )}
+            <div class={props.search === false ? "services-row__search-container unactive" : "services-row__search-container"}>
+                {props.search && (
+                    <SearchInput placeholder="Search for employee" width="303"></SearchInput>
+                )}
+            </div>
             {props.date && (
                 <div class="services-row__date">
                     <div class="services-row__date-text">01.02.2020 - 07.02.2020</div>
@@ -33,6 +38,7 @@ const ServicesRow = (props) => {
             {props.plusButton && (
                 <img src={greenPlusIcon} alt="" class="services-row__plus-icon" />
             )}
+
         </div>
     )
 }

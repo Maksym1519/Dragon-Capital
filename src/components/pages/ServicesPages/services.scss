@@ -67,7 +67,7 @@
 		filter: drop-shadow(0px 16px 34px rgba(0, 0, 0, 0.04));
 		&.active {
 			color: var(--1, #277d59);
-			border-left: 3px solid #277D59;
+			border-left: 3px solid #277d59;
 			padding: 18px 0 0 27.5px;
 			font-family: Plumb-700;
 		}
@@ -79,4 +79,40 @@
 
 .services-component {
 	width: 100%;
+
+	&__chosen-employees {
+		margin: 7px 0 37px 383px;
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		width: 100%;
+
+	}
+
+	&__chosen-row {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__avatar {
+		width: 30px;
+		height: 30px;
+		margin: 0 10px 0 0;
+	}
+
+	&__chosen-name {
+		color: var(--, #3d3d3d);
+		font-family: Plumb-400;
+		font-size: 15px;
+		line-height: 150%; /* 22.5px */
+		width: 100%;
+		max-width: 277px;
+	}
+
+	&__red-cross {
+		width: 12px;
+		height: 12px;
+	}
 }

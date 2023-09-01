@@ -15,16 +15,24 @@
 		&.first {
 			max-width: 209px;
 			margin-right: 18px;
-			&.unactive{
+			&.unactive {
 				margin-right: 0px;
 			}
 		}
 		&.second {
 			max-width: 303px;
 			margin-right: 7px;
-			&.unactive{
+			&.unactive {
 				margin-right: 0px;
 			}
+		}
+	}
+
+	&__search-container {
+		max-width: 303px;
+		margin: 0px 7px 0 0;
+		&.unactive {
+			margin-right: 0px;
 		}
 	}
 
@@ -49,7 +57,7 @@
 		background: #fff;
 		border: 1px solid #e2e2e2;
 		flex-shrink: 0;
-		padding: 11px 18px 10px 15px;
+		padding: 9px 18px 10px 15px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
