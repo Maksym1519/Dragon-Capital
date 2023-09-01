@@ -40,6 +40,15 @@ const ReviewEmployeeViewLazy = React.lazy(() =>
 const ReviewEmployeeArchiveLazy = React.lazy(() =>
   import("./components/pages/ReviewEmployee/ReviewEmployeeArchive.jsx")
 );
+const AnketaLazy = React.lazy(() =>
+  import("./components/pages/ReviewEmployee/Anketa.jsx")
+);
+const SupportPageLazy = React.lazy(() =>
+  import("./components/pages/ServicesPages/Support.jsx")
+);
+const ServicesPageLazy = React.lazy(() =>
+  import("./components/pages/ServicesPages/ServicesPage.jsx")
+);
 const EditTeamLazy = React.lazy(() =>
   import("./components/pages/Departments/EditTeam.jsx")
 );
@@ -130,6 +139,9 @@ const App = () => {
         <Link to="/ReviewEmployeeMain">ReviewEmployeeMain</Link>
         <Link to="/ReviewEmployeeView">ReviewEmployeeView</Link>
         <Link to="/ReviewEmployeeArchive">ReviewEmployeeArchive</Link>
+        <Link to="/Anketa">Anketa</Link>
+        <Link to="/SupportPage">SupportPage</Link>
+        <Link to="/ServicesPage">ServicesPage</Link>
         <Link to="/EditTeam">EditTeam</Link>
         <Link to="/Starting">Starting</Link>
         <Link to="/Holidays">Holidays</Link>
@@ -269,6 +281,30 @@ const App = () => {
           element={
             <React.Suspense>
               <ReviewEmployeeArchiveLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/Anketa"
+          element={
+            <React.Suspense>
+              <AnketaLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/SupportPage"
+          element={
+            <React.Suspense>
+              <SupportPageLazy />
+            </React.Suspense>
+          }
+        ></Route>
+        <Route
+          path="/ServicesPage"
+          element={
+            <React.Suspense>
+              <ServicesPageLazy />
             </React.Suspense>
           }
         ></Route>
