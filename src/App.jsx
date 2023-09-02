@@ -121,7 +121,7 @@ const ReviewProfileDownloadLazy = React.lazy(() =>
 
 import "./fonts.scss";
 import "./style.scss";
-import ServicePage from "./components/pages/ServicePage/servicePage";
+//import ServicePage from "./components/pages/ServicePage/servicePage";
 
 const App = () => {
   return (
@@ -166,8 +166,7 @@ const App = () => {
         <Link to="/ReviewCreateEmployee">ReviewCreateEmployee</Link>
         <Link to="/ReviewProfileAdmin">ReviewProfileAdmin</Link>
         <Link to="/ReviewProfileDownload">ReviewProfileDownload</Link>
-        <Link to="/ServicePage">ServicePage</Link>
-        </nav>
+         </nav>
       <Routes>
         <Route
           path="/"
@@ -485,15 +484,7 @@ const App = () => {
             </React.Suspense>
           }
         ></Route>
-        <Route
-          path="/ServicePage"
-          element={
-            <React.Suspense>
-              <ServicePage />
-            </React.Suspense>
-          }
-        ></Route>
-      </Routes>
+       </Routes>
     </>
   );
 };
