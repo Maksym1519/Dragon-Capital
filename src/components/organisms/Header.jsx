@@ -59,9 +59,9 @@ const Header = () => {
               <Text17400 text={"Сотрудники"} />
             </div>
           </Link>
-           <div className={h.navigation__item + " " + h.reviewMenu__wrapper}>
+           <div className={h.navigation__item + " " + h.reviewMenu__wrapper} onClick={toggleCalendar}>
               <Text17400 text={"Календарь"} />
-              <img src={Arrow} alt="icon"  onClick={toggleCalendar} className={`${h.arrow} ${isCalendar ? h.arrowOpen : ""}`}/>
+              <img src={Arrow} alt="icon" className={`${h.arrow} ${isCalendar ? h.arrowOpen : ""}`}/>
               {isCalendar &&
                <div className={h.calendar__menu}>
                 <Link to='/Calendar'><div className={h.item}>Calendar watch</div></Link>
@@ -70,9 +70,9 @@ const Header = () => {
                </div>
               }
             </div>
-           <div className={h.navigation__item + " " + h.reviewMenu__wrapper}>
+           <div className={h.navigation__item + " " + h.reviewMenu__wrapper} onClick={toggleReview}>
               <Text17400 text={"Ревью"} />
-              <img src={Arrow} alt="icon" onClick={toggleReview} className={`${h.arrow} ${isReview ? h.arrowOpen : ""}`}/>
+              <img src={Arrow} alt="icon" className={`${h.arrow} ${isReview ? h.arrowOpen : ""}`}/>
               {isReview &&
               <div className={h.review__menu}>
                 <Link to='/ReviewAdmin'><div className={h.item}>ReviewAdmin</div></Link>
@@ -92,12 +92,11 @@ const Header = () => {
             <img src={Bell} alt="bell" className={h.bell} />
             {/* <img src={Dot} alt="dot" className={h.dot} /> */}
           </div>
-          <div className={h.ava__wrapper}>
+          <div className={h.ava__wrapper} onClick={toggleMenu}>
             <img src={Ava} alt="ava" />
             <img
               src={Arrow}
               alt="arrow"
-              onClick={toggleMenu}
               className={`${h.arrow} ${isOpen ? h.arrowOpen : ""}`}
             />
           </div>
