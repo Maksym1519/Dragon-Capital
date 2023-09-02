@@ -121,7 +121,7 @@ const ReviewProfileDownloadLazy = React.lazy(() =>
 
 import "./fonts.scss";
 import "./style.scss";
-import ServicePage from "./components/pages/ServicePage/servicePage";
+//import ServicePage from "./components/pages/ServicePage/servicePage";
 
 const App = () => {
   return (
