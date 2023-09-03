@@ -91,7 +91,7 @@
 }
 
 .departments-popup {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 0;
@@ -99,7 +99,7 @@
 	visibility: hidden;
 	&.active {
 		visibility: visible;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -111,7 +111,7 @@
 	}
 
 	&__box {
-		margin: 454px 0 0 0;
+		margin: 254px 0 0 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
